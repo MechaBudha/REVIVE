@@ -318,6 +318,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ReloadState.cs" />
     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
