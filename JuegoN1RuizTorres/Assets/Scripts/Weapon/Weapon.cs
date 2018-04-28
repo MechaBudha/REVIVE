@@ -14,10 +14,14 @@ public class Weapon : MonoBehaviour {
     public int currentBullets;                                              //Las balas que tengo actualmente en el cargador
 
     public Transform shootPoint;                                            //El punto de donde salen las balas
+    public GameObject hitParticles;
+    public GameObject bulletImpact;
+
     public ParticleSystem muzzleFlash;
     public AudioClip shootSound;
 
     public float fireRate = 0.1f;                                           //El delay entre cada disparo
+    public float damage = 20f;
 
     float fireTimer;                                                        //Contador de tiempo para el delay
 
@@ -70,6 +74,20 @@ public class Weapon : MonoBehaviour {
         {
             Debug.Log(hit.transform.name + " found!");                      //Muestra el nombre del objeto al que golpea el raycast
 
+            //Esto crea un chispaso justo donde pega el raycast
+            GameObject hitParticleEffect = Instantiate(hitParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+            hitParticleEffect.transform.SetParent(hit.transform);
+            //Esto crea una imagen justo donde pega el raycast
+            GameObject bulletHole = Instantiate(bulletImpact, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+            bulletHole.transform.SetParent(hit.transform);
+
+            Destroy(hitParticleEffect, 1f);
+            Destroy(bulletHole, 4f);
+
+            if(hit.transform.GetComponent<HealthController>())              //Esto pregunta si el objeto al que le disparamos tiene el controlador de vida
+            {
+                hit.transform.GetComponent<HealthController>().ApplyDamage(damage); //Accedo a la funcion del controlador y le mando la variable damage
+            }
         }
 
         anim.CrossFadeInFixedTime("Fire", 0.01f);                           //Ejecuta la animacion de disparo

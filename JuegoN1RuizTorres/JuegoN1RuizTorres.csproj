@@ -318,8 +318,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ReloadState.cs" />
+    <Compile Include="Assets\Scripts\HealthController.cs" />
+    <Compile Include="Assets\Scripts\Weapon\ReloadState.cs" />
     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Weapon\WeaponSway.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3rd Party Assets\modern-weapons\README.txt" />
