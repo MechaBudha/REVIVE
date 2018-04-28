@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
@@ -13,6 +14,7 @@ public class Weapon : MonoBehaviour {
 
     public int currentBullets;                                              //Las balas que tengo actualmente en el cargador
 
+    public Text ammoText;
     public Transform shootPoint;                                            //El punto de donde salen las balas
     public GameObject hitParticles;
     public GameObject bulletImpact;
@@ -27,11 +29,17 @@ public class Weapon : MonoBehaviour {
 
     private bool isReloading;                                               //Ve si estamos en la animacion de Reload
 
+    private void OnEnable()
+    {
+        UpdadateAmmoText();
+    }
+
     void Start()
     {
         anim = GetComponent<Animator>();
         _AudioSource = GetComponent<AudioSource>();
         currentBullets = bulletsPerMag;
+        UpdadateAmmoText();
     }
 
     void Update()
@@ -95,6 +103,8 @@ public class Weapon : MonoBehaviour {
         PlayShootSound();                                                   //Ejecuta el sonido del disparo
 
         currentBullets--;
+        UpdadateAmmoText();
+
         fireTimer = 0.0f;                                                   //Resetea el fire timer
     }
 
@@ -107,6 +117,8 @@ public class Weapon : MonoBehaviour {
 
         bulletsLeft -= bulletsToDeduct;
         currentBullets += bulletsToDeduct;
+
+        UpdadateAmmoText();
     }
 
     private void DoReload()
@@ -123,5 +135,10 @@ public class Weapon : MonoBehaviour {
         _AudioSource.PlayOneShot(shootSound);                               //Con este podemos reproducir muchos audios
         //_AudioSource.clip = shootSound;                                   //Con estos dos el audio se cortaba
         //_AudioSource.Play();
+    }
+
+    private void UpdadateAmmoText()
+    {
+        ammoText.text = currentBullets + " / " + bulletsLeft;
     }
 }
