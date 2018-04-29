@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoN1RuizTorres", "JuegoN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoN1RuizTorres.Editor.Plugins", "JuegoN1RuizTorres.Editor.Plugins.csproj", "{589D2D3C-7A2F-4F9E-450C-8330ECA2D577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoN1RuizTorres.Editor", "JuegoN1RuizTorres.Editor.csproj", "{11E6745F-56AF-428C-2ED8-6DD6F1E833CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{589D2D3C-7A2F-4F9E-450C-8330ECA2D577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{589D2D3C-7A2F-4F9E-450C-8330ECA2D577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{589D2D3C-7A2F-4F9E-450C-8330ECA2D577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E6745F-56AF-428C-2ED8-6DD6F1E833CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E6745F-56AF-428C-2ED8-6DD6F1E833CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E6745F-56AF-428C-2ED8-6DD6F1E833CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E6745F-56AF-428C-2ED8-6DD6F1E833CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
