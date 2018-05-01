@@ -14,6 +14,8 @@ public class PaperController : MonoBehaviour
 
     public GameObject playerObject;
     public GameObject triggerObject;
+    public GameObject firstEnemyObject;                                         //cuando esta activo prende el script de trigger 
+
 
     void Start()
     {
@@ -48,5 +50,6 @@ public class PaperController : MonoBehaviour
         Cursor.visible = false;
 
         triggerObject.GetComponent<LightsController>().enabled = true;
+        firstEnemyObject.GetComponent<JumpScareController>().enabled = true;
     }
 }

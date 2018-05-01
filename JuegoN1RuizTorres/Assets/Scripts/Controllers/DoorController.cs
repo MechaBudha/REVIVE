@@ -3,26 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorController : MonoBehaviour {
-    /*
-        [SerializeField] private GameObject KeyDoor;
-        public bool doorIsOpening;
-
-        void Update () {
-            if (doorIsOpening == true)
-                KeyDoor.transform.Rotate(Vector3.up * Time.deltaTime * 10);
-            if (KeyDoor.transform.rotation.y > 7f)
-                doorIsOpening = false;
-        }
-
-        private void OnMouseDown()
-        {
-            doorIsOpening = true;
-        }
-        */
-
+    
     public Animator _animator;
     public bool doorIsOpening;
-
+    public GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
 
     void Start()
     {
@@ -44,6 +28,8 @@ public class DoorController : MonoBehaviour {
     void OnMouseDown()
     {
         doorIsOpening = true;
+        secondEnemyObject.SetActive(true);
+        secondEnemyObject.GetComponent<FirstChaseController>().enabled = true;
     }
 
 }
