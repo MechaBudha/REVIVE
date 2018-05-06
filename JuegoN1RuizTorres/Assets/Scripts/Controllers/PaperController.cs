@@ -13,7 +13,7 @@ public class PaperController : MonoBehaviour
     public AudioClip putAwaySound;
 
     public GameObject playerObject;
-    public GameObject triggerObject;
+    //public GameObject triggerObject;
     public GameObject firstEnemyObject;                                         //cuando esta activo prende el script de trigger 
 
 
@@ -49,7 +49,7 @@ public class PaperController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        triggerObject.GetComponent<LightsController>().enabled = true;
+        //triggerObject.GetComponent<LightsController>().enabled = true;
         firstEnemyObject.GetComponent<JumpScareController>().enabled = true;
     }
 }

@@ -6,12 +6,9 @@ public class DoorController : MonoBehaviour {
     
     public Animator _animator;
     public bool doorIsOpening;
-    public GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
-
-    void Start()
-    {
-        
-    }
+    //public GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
+    public GameObject triggerObject;
+    public GameObject thisBox;
 
     void Update()
     {
@@ -20,16 +17,30 @@ public class DoorController : MonoBehaviour {
         {
 
             _animator.SetBool("open", true);
-            
+
+
+            StartCoroutine(DeleteThisBox());
         }
     }
 
 
-    void OnMouseDown()
+    public void OpenKeyDoor()
     {
         doorIsOpening = true;
-        secondEnemyObject.SetActive(true);
-        secondEnemyObject.GetComponent<FirstChaseController>().enabled = true;
+
+        triggerObject.GetComponent<LightsController>().enabled = true;
+        //secondEnemyObject.SetActive(true);
+        //secondEnemyObject.GetComponent<FirstChaseController>().enabled = true;
+    }
+
+    IEnumerator DeleteThisBox()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        thisBox.SetActive(false);
+
+        thisBox.GetComponent<DoorController>().enabled = false;
+
     }
 
 }

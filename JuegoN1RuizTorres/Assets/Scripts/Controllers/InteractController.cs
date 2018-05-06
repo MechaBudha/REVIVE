@@ -39,6 +39,30 @@ public class InteractController : MonoBehaviour {
                         hitInfo.collider.GetComponent<PaperController>().ShowNoteImage();
 
                     }
+
+                    if (hitInfo.collider.CompareTag("Key2"))
+                    {
+                        hitInfo.collider.GetComponent<KeyDoor2Controller>().PickUp();
+
+                    }
+
+                    if (hitInfo.collider.CompareTag("Button"))
+                    {
+                        hitInfo.collider.GetComponent<Door4Controller>().OpenDoor4();
+
+                    }
+
+                    if (hitInfo.collider.CompareTag("Door"))
+                    {
+                        hitInfo.collider.GetComponent<DoorLocked>().TryToOpen();
+
+                    }
+
+                    if (hitInfo.collider.CompareTag("ButtonKey"))
+                    {
+                        hitInfo.collider.GetComponent<DoorController>().OpenKeyDoor();
+
+                    }
                 }
 
             }

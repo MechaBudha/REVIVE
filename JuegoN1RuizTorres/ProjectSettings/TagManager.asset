@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Note
+  - Key2
+  - Button
+  - Door
+  - ButtonKey
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class WinEvent : MonoBehaviour {
         {
 
             Debug.Log("Hello");
-            if (ScoreManager.Instance.Score >= 100)
+            if (ScoreManager.Instance.Score >= 200)
             {
                 SceneManager.LoadScene(nextScene);
             }
