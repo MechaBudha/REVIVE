@@ -19,18 +19,20 @@ public class Door2Controller : MonoBehaviour {
             _animator.SetBool("open", true);
 
 
-            _audioSource.Play();
         }
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-
+        if (ScoreManager.Instance.Score >= 100)
+        {
             doorIsOpening = true;
+            _audioSource.Play();
 
             StartCoroutine(DeleteThisBox());
-
+        }
+        
     }
 
     IEnumerator DeleteThisBox()

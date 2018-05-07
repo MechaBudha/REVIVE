@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartButtons : MonoBehaviour {
 
@@ -24,7 +25,7 @@ public class StartButtons : MonoBehaviour {
         GameObject.Find("Salir").GetComponent<TextMesh>().color = letra;
     }
     */
-    public void OnMouseUp()
+    /*public void OnMouseUp()
     {
         if (quit == true)
             GameExit();
@@ -42,5 +43,22 @@ public class StartButtons : MonoBehaviour {
     {
         SceneManager.LoadScene("Tutorial01");
         
+    }*/
+
+    public void Awake()
+    {
+        var btn = GetComponent<Button>();
+        btn.onClick.AddListener(LoadGame);
+        btn.onClick.AddListener(GameExit);
+    }
+
+    public void GameExit()
+    {
+        Application.Quit();
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }

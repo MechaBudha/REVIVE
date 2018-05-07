@@ -42,8 +42,8 @@ public class LightsController : MonoBehaviour {
                 Renderer renderer = go.GetComponent<Renderer>();
                 Material mat = renderer.material;
 
-                float emission = Mathf.PingPong(Time.time, 0f);
-                Color baseColor = Color.white; //Replace this with whatever you want for your base color at emission level '1'
+                float emission = Mathf.PingPong(Time.time, 1f);
+                Color baseColor = Color.red; //Replace this with whatever you want for your base color at emission level '1'
 
                 Color finalColor = baseColor * Mathf.LinearToGammaSpace(emission);
 

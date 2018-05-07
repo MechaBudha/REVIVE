@@ -446,7 +446,9 @@
     <Compile Include="Assets\Scripts\FlickeringLight.cs" />
     <Compile Include="Assets\Scripts\Gizmo.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\StartButtons.cs" />
     <Compile Include="Assets\Scripts\Weapon\ReloadState.cs" />
     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />

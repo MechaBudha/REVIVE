@@ -17,7 +17,6 @@ public class Door3Controller : MonoBehaviour {
         if (doorIsOpening == true)
         {
             _animator.SetBool("open", true);
-            _audioSource.Play();
 
             //GetComponent<AudioSource>().PlayOneShot(doorOpenSound);
         }
@@ -27,6 +26,7 @@ public class Door3Controller : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         doorIsOpening = true;
+        _audioSource.Play();
 
         StartCoroutine(DeleteThisBox());
     }
