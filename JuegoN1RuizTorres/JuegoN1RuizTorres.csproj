@@ -426,11 +426,13 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\DisableEnemyController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Door2Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\Door3Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\Door4Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\DoorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Enable1.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnemyTrigger1Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\FirstChaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\HealthController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractController.cs" />

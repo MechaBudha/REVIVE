@@ -8,7 +8,12 @@ public class DoorController : MonoBehaviour {
     public bool doorIsOpening;
     //public GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
     public GameObject triggerObject;
+    public GameObject triggerEnemy;
     public GameObject thisBox;
+    public GameObject bgm1;
+    public AudioSource bgm2;
+    public AudioSource button;
+    public GameObject trigger;
 
     void Update()
     {
@@ -29,6 +34,11 @@ public class DoorController : MonoBehaviour {
         doorIsOpening = true;
 
         triggerObject.GetComponent<LightsController>().enabled = true;
+        triggerEnemy.SetActive(true);
+        bgm1.SetActive(false);
+        bgm2.Play();
+        button.Play();
+        trigger.SetActive(true);
         //secondEnemyObject.SetActive(true);
         //secondEnemyObject.GetComponent<FirstChaseController>().enabled = true;
     }

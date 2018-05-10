@@ -7,6 +7,7 @@ public class Door3Controller : MonoBehaviour {
     public Animator _animator;
     public GameObject thisBox;
     public AudioSource _audioSource;
+    public AudioSource _audioSource2;
     //public AudioClip doorOpenSound;
 
     public bool doorIsOpening;
@@ -27,6 +28,7 @@ public class Door3Controller : MonoBehaviour {
     {
         doorIsOpening = true;
         _audioSource.Play();
+        _audioSource2.Play();
 
         StartCoroutine(DeleteThisBox());
     }

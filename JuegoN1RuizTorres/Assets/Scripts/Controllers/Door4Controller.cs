@@ -7,6 +7,8 @@ public class Door4Controller : MonoBehaviour
 
     public Animator _animator;
     public GameObject thisButton;
+    //public GameObject trigger;
+    public AudioSource button;
 
     public bool door4IsOpening;
 
@@ -25,15 +27,17 @@ public class Door4Controller : MonoBehaviour
     public void OpenDoor4()
     {
         door4IsOpening = true;
+        //trigger.SetActive(true);
+        button.Play();
 
         StartCoroutine(DeleteThisButton());
     }
 
     IEnumerator DeleteThisButton()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.5f);
 
-        thisButton.SetActive(false);
+        //thisButton.SetActive(false);
 
         thisButton.GetComponent<Door4Controller>().enabled = false;
 

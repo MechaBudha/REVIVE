@@ -6,6 +6,8 @@ public class KeyDoor2Controller : MonoBehaviour {
 
     //public GameObject triggerObject;
     [SerializeField] int score;
+    public AudioSource keyPickup;
+    public AudioSource enemyWalk;
 
     void Start() {
 
@@ -20,6 +22,8 @@ public class KeyDoor2Controller : MonoBehaviour {
     {
 
         ScoreManager.Instance.Score += score;
+        keyPickup.Play();
+        enemyWalk.Play();
         Destroy(gameObject);
 
 

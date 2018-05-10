@@ -27,4 +27,11 @@ public class EnemyMove : MonoBehaviour {
 
         }
 	}
+
+    /*private void OnBecameVisible()
+    {
+        //Renderer.
+        //Destroy(gameObject);
+        Debug.Log("Hola");
+    }*/
 }
