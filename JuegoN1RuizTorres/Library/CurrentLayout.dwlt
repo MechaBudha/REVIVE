@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 392}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 2354
+  controlID: 5345
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 392}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 2355
+  controlID: 5324
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 2545
+  controlID: 5360
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -369,14 +369,14 @@ MonoBehaviour:
     height: 655
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 7312.748081278181
+  lastFramingTime: 3483.574112482576
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.446476, y: 2.6304626, z: 0.013262272}
+    m_Target: {x: 8.406938, y: 9.286505, z: 25.9154}
     speed: 2
-    m_Value: {x: -6.446476, y: 2.6304626, z: 0.013262272}
+    m_Value: {x: 8.406938, y: 9.286505, z: 25.9154}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -400,13 +400,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.01057472, y: 0.974582, z: -0.2187663, w: 0.047111034}
+    m_Target: {x: 0.022997517, y: -0.94338256, z: 0.066946946, w: 0.3240658}
     speed: 2
-    m_Value: {x: 0.010574721, y: 0.9745821, z: -0.2187663, w: 0.047111034}
+    m_Value: {x: 0.022997517, y: -0.94338256, z: 0.066946946, w: 0.3240658}
   m_Size:
-    m_Target: 7.3620615
+    m_Target: 0.351826
     speed: 2
-    m_Value: 7.3620615
+    m_Value: 0.351826
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -704,9 +704,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84440000
-    m_LastClickedID: 17540
-    m_ExpandedIDs: 5ef9ffff82f9ffff98fbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: e25dfaff5620fcff7a21fcff6839fcff304afcffb28dffff98fbffff000000005a4400006e440000984700009aa30000c6a40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,19 +768,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 69
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Users\gamer\Desktop\Juego\DV2-JuegoN1\JuegoN1RuizTorres
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 91}
-    m_SelectedIDs: ea330000
-    m_LastClickedID: 13290
-    m_ExpandedIDs: 00000000b02b0000d42c00009c2f0000c6300000d835000000ca9a3bffffff7f
+    m_SelectedIDs: d0350000
+    m_LastClickedID: 13776
+    m_ExpandedIDs: 00000000b02b00009c2f00002a31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -808,7 +808,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b02b0000d42c00009c2f0000c6300000d835000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b02b00009c2f00002a31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -836,7 +836,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000c2460000d02e000000000000ec200200f2a50000dea90000824b0000
+    m_ExpandedInstanceIDs: c6230000c2460000d02e000000000000ec200200f2a50000dea90000824b00005a530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
