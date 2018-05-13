@@ -29,7 +29,9 @@ public class JumpScareController : MonoBehaviour {
     {
         triggerOn = true;
         _audioSource.Play();
-        playerObject.GetComponent<FirstPersonController>().enabled = false;
+        //playerObject.GetComponent<FirstPersonController>().enabled = false;
+        playerObject.GetComponent<PlayerLook>().enabled = false;
+        playerObject.GetComponent<PlayerMove>().enabled = false;
 
         StartCoroutine(EndJumpScare());
     }
@@ -43,6 +45,9 @@ public class JumpScareController : MonoBehaviour {
 
         jumpBox.GetComponent<JumpScareController>().enabled = false;
         _audioSource.GetComponent<AudioSource>().enabled = false;
-        playerObject.GetComponent<FirstPersonController>().enabled = true;
+        //playerObject.GetComponent<FirstPersonController>().enabled = true;
+
+        playerObject.GetComponent<PlayerLook>().enabled = true;
+        playerObject.GetComponent<PlayerMove>().enabled = true;
     }
 }

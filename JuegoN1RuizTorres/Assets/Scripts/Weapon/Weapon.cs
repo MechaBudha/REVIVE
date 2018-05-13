@@ -67,7 +67,7 @@ public class Weapon : MonoBehaviour {
     {
         AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
 
-        isReloading = info.IsName("Reload");                                //Si estamos en el Reload state, isReloading va a ser true por defercto
+        isReloading = info.IsName("Recharge");                                //Si estamos en el Reload state, isReloading va a ser true por defercto
 
         //if (info.IsName("Fire")) anim.SetBool("Fire", false);             //Si estamos en el Fire State, reseteamos la variable
     }
@@ -101,7 +101,7 @@ public class Weapon : MonoBehaviour {
             }
         }
 
-        anim.CrossFadeInFixedTime("Fire", 0.01f);                           //Ejecuta la animacion de disparo
+        anim.CrossFadeInFixedTime("Shot", 0.01f);                           //Ejecuta la animacion de disparo
         muzzleFlash.Play();                                                 //Ejecuta el fogonazo del arma
         PlayShootSound();                                                   //Ejecuta el sonido del disparo
 
@@ -130,7 +130,7 @@ public class Weapon : MonoBehaviour {
 
         if (isReloading) return;
 
-        anim.CrossFadeInFixedTime("Reload", 0.01f);
+        anim.CrossFadeInFixedTime("Recharge", 0.01f);
     }
 
     private void PlayShootSound()

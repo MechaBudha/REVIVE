@@ -433,6 +433,7 @@
     <Compile Include="Assets\Scripts\Controllers\DoorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Enable1.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnemyTrigger1Controller.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnemyTrigger3Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\FirstChaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\HealthController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractController.cs" />
@@ -449,6 +450,8 @@
     <Compile Include="Assets\Scripts\Gizmo.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\StartButtons.cs" />

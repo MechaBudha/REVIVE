@@ -30,7 +30,9 @@ public class PaperController : MonoBehaviour
 
         hideNoteButton.SetActive(true);
 
-        playerObject.GetComponent<FirstPersonController>().enabled = false;     //Desactiva el controlador del jugador asi no te podes mover mientras ves la nota
+        //playerObject.GetComponent<FirstPersonController>().enabled = false;     //Desactiva el controlador del jugador asi no te podes mover mientras ves la nota
+        playerObject.GetComponent<PlayerLook>().enabled = false;
+        playerObject.GetComponent<PlayerMove>().enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -44,7 +46,9 @@ public class PaperController : MonoBehaviour
 
         hideNoteButton.SetActive(false);
 
-        playerObject.GetComponent<FirstPersonController>().enabled = true;
+        //playerObject.GetComponent<FirstPersonController>().enabled = true;
+        playerObject.GetComponent<PlayerLook>().enabled = true;
+        playerObject.GetComponent<PlayerMove>().enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
