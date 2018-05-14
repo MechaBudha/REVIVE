@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class EnemyTrigger3Controller : MonoBehaviour {
 
-    public GameObject enemy;
-    public GameObject thisBox;
-    
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject thisBox;
 
-    public bool triggerOn;
+    [SerializeField] private bool triggerOn;
 
     private void Update()
     {
@@ -21,9 +20,6 @@ public class EnemyTrigger3Controller : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         triggerOn = true;
-
-        
-
         StartCoroutine(DeleteThisBox());
     }
 
@@ -34,6 +30,5 @@ public class EnemyTrigger3Controller : MonoBehaviour {
         thisBox.SetActive(false);
 
         thisBox.GetComponent<EnemyTrigger3Controller>().enabled = false;
-
     }
 }

@@ -8,22 +8,21 @@ public class Weapon : MonoBehaviour {
     private Animator anim;
     private AudioSource _AudioSource;
 
-    public float range = 100f;                                              //Distancia maxima del arma
-    public int bulletsPerMag = 30;                                          //Balas en cada cargador
-    public int bulletsLeft = 200;                                           //Todas las balas que tengo
+    [SerializeField] private float range = 100f;                            //Distancia maxima del arma
+    [SerializeField] private int bulletsPerMag = 30;                        //Balas en cada cargador
+    [SerializeField] private int bulletsLeft = 200;                         //Todas las balas que tengo
+    [SerializeField] private int currentBullets;                            //Las balas que tengo actualmente en el cargador
 
-    public int currentBullets;                                              //Las balas que tengo actualmente en el cargador
+    [SerializeField] private Text ammoText;
+    [SerializeField] private Transform shootPoint;                          //El punto de donde salen las balas
+    [SerializeField] private GameObject hitParticles;
+    [SerializeField] private GameObject bulletImpact;
 
-    public Text ammoText;
-    public Transform shootPoint;                                            //El punto de donde salen las balas
-    public GameObject hitParticles;
-    public GameObject bulletImpact;
+    [SerializeField] private ParticleSystem muzzleFlash;
+    [SerializeField] private AudioClip shootSound;
 
-    public ParticleSystem muzzleFlash;
-    public AudioClip shootSound;
-
-    public float fireRate = 0.1f;                                           //El delay entre cada disparo
-    public float damage = 20f;
+    [SerializeField] private float fireRate = 0.1f;                         //El delay entre cada disparo
+    [SerializeField] private float damage = 20f;
 
     float fireTimer;                                                        //Contador de tiempo para el delay
 
@@ -44,7 +43,6 @@ public class Weapon : MonoBehaviour {
 
     void Update()
     {
-
         if (Input.GetButton("Fire1"))
         {
             if (currentBullets > 0)

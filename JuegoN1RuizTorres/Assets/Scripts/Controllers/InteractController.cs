@@ -5,14 +5,11 @@ using UnityEngine.UI;
 
 public class InteractController : MonoBehaviour {
 
-    public string interactButton;
-
-    public float interactDistance = 3f;
-    public LayerMask interactLayer;         //Filtro para que no se pueda interactuar con todo
-
-    public Image interactIcon;
-
-    public bool isInteracting;
+    [SerializeField] private string interactButton;
+    [SerializeField] private float interactDistance = 3f;
+    [SerializeField] private LayerMask interactLayer;         //Filtro para que no se pueda interactuar con todo
+    [SerializeField] private Image interactIcon;
+    [SerializeField] private bool isInteracting;
 
 	// Use this for initialization
 	void Start () {
@@ -37,34 +34,33 @@ public class InteractController : MonoBehaviour {
                     if(hitInfo.collider.CompareTag("Note"))
                     {
                         hitInfo.collider.GetComponent<PaperController>().ShowNoteImage();
-
                     }
 
                     if (hitInfo.collider.CompareTag("Key2"))
                     {
                         hitInfo.collider.GetComponent<KeyDoor2Controller>().PickUp();
-
                     }
 
                     if (hitInfo.collider.CompareTag("Button"))
                     {
                         hitInfo.collider.GetComponent<Door4Controller>().OpenDoor4();
-
                     }
 
                     if (hitInfo.collider.CompareTag("Door"))
                     {
                         hitInfo.collider.GetComponent<DoorLocked>().TryToOpen();
-
                     }
 
                     if (hitInfo.collider.CompareTag("ButtonKey"))
                     {
                         hitInfo.collider.GetComponent<DoorController>().OpenKeyDoor();
+                    }
 
+                    if (hitInfo.collider.CompareTag("Teddy"))
+                    {
+                        hitInfo.collider.GetComponent<Key>().OpenWinDoor();
                     }
                 }
-
             }
         }
 	}

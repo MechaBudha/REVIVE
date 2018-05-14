@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class TurnOffLightsController : MonoBehaviour {
 
-    public GameObject[] Lights = null;
-    public GameObject[] Box = null;
-    //public GameObject triggerN4;
-    public bool onOff;
+    [SerializeField] private GameObject[] Lights = null;
+    [SerializeField] private GameObject[] Box = null;
+    //[SerializeField] private GameObject triggerN4;
+    [SerializeField] private bool onOff;
 
     void Update()
     {
         if (onOff)
         {
-
-            /*for (int i = 0; i < Lights.Length; i++)
-            {
-                Light light = gameObject.GetComponent<Light>();
-                light.intensity = 0f;
-            }*/
-
             foreach (GameObject go in Lights)
             {
                 Light light = go.GetComponent<Light>();
@@ -38,7 +31,6 @@ public class TurnOffLightsController : MonoBehaviour {
 
                 mat.SetColor("_EmissionColor", finalColor);
             }
-
         }
     }
 

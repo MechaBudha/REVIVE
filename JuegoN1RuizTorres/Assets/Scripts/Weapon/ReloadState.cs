@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReloadState : StateMachineBehaviour {
 
-    public float reloadTime = 0.7f;
+    [SerializeField] private float reloadTime = 0.7f;
     bool hasReloaded = false;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

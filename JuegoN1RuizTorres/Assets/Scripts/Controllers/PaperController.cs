@@ -6,15 +6,15 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class PaperController : MonoBehaviour
 {
-    public Image noteImage;
-    public GameObject hideNoteButton;
+    [SerializeField] private Image noteImage;
+    [SerializeField] private GameObject hideNoteButton;
 
-    public AudioClip pickupSound;
-    public AudioClip putAwaySound;
+    [SerializeField] private AudioClip pickupSound;
+    [SerializeField] private AudioClip putAwaySound;
 
-    public GameObject playerObject;
-    //public GameObject triggerObject;
-    public GameObject firstEnemyObject;                                         //cuando esta activo prende el script de trigger 
+    [SerializeField] private GameObject playerObject;
+    //[SerializeField] private GameObject triggerObject;
+    [SerializeField] private GameObject firstEnemyObject;                          //cuando esta activo prende el script de trigger 
 
 
     void Start()

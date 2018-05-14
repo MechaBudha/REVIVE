@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WeaponSway : MonoBehaviour {
 
-    public float amount;                                        //Variable creada para ver cuanto queremos que se mueva el arma para la derecha/izquierda
-    public float maxAmount;                                     //Maxima cantidad que va a oscilar
-    public float smoothAmount;                                  //Velocidad de que va a oscilar
+    [SerializeField] private float amount;                      //Variable creada para ver cuanto queremos que se mueva el arma para la derecha/izquierda
+    [SerializeField] private float maxAmount;                   //Maxima cantidad que va a oscilar
+    [SerializeField] private float smoothAmount;                //Velocidad de que va a oscilar
 
     private Vector3 initialPosition;
 

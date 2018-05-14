@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class FirstChaseController : MonoBehaviour {
 
-    public GameObject enemy;
-    public GameObject spawnBox;
-    public GameObject button;
-    public AudioSource ambientMusic;
-    public AudioSource chaseMusic;
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject spawnBox;
+    [SerializeField] private GameObject button;
+    [SerializeField] private AudioSource ambientMusic;
+    [SerializeField] private AudioSource chaseMusic;
+    [SerializeField] private bool triggerOn;
     private float counter = 0.1f;
-
-    public bool triggerOn;
 
     private void Update()
     {

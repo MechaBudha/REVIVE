@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    public Transform playerBody;
-    public float mouseSensitivity;
+    [SerializeField] private Transform playerBody;
+    [SerializeField] private float mouseSensitivity;
 
-    float xAxisClamp = 0.0f;
+    private float xAxisClamp = 0.0f;
 
     void Awake()
     {
@@ -47,12 +47,7 @@ public class PlayerLook : MonoBehaviour
             targetRotCam.x = 270;
         }
 
-        //print(mouseY);
-
-
         transform.rotation = Quaternion.Euler(targetRotCam);
         playerBody.rotation = Quaternion.Euler(targetRotBody);
-
-
     }
 }

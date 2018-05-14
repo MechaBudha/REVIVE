@@ -5,9 +5,9 @@ using UnityEngine;
 public class HealthController : MonoBehaviour
 {
     [SerializeField] private float health = 100f;
-    public AudioSource chaseMusic;
-    public AudioSource ambientMusic;
-    //public GameObject deactivateButton;
+    [SerializeField] private AudioSource chaseMusic;
+    [SerializeField] private AudioSource ambientMusic;
+    //[SerializeField] private GameObject deactivateButton;
 
     public void ApplyDamage(float damage)
     {

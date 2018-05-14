@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enable1 : MonoBehaviour {
 
-    public GameObject openDoor3Trigger;
-    public GameObject thisBox;
-    public bool triggerOn;
+    [SerializeField] private GameObject openDoor3Trigger;
+    [SerializeField] private GameObject thisBox;
+    [SerializeField] private bool triggerOn;
 
     private void Update()
     {
@@ -31,6 +31,5 @@ public class Enable1 : MonoBehaviour {
         thisBox.SetActive(false);
         
         thisBox.GetComponent<Enable1>().enabled = false;
-       
     }
 }

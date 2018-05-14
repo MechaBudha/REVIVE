@@ -7,10 +7,10 @@ public class PauseMenu : MonoBehaviour {
 
     public static bool GameIsPause = false;
 
-    public GameObject pauseMenuUI;
-    public GameObject player;
-    public GameObject playerCamera;
-    public GameObject playerWeapon;
+    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject playerCamera;
+    [SerializeField] private GameObject playerWeapon;
 
     void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape))

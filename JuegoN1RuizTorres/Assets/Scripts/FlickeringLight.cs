@@ -8,7 +8,6 @@ public class FlickeringLight : MonoBehaviour {
     [SerializeField] private float minTime;
     [SerializeField] private float maxTime; 
 
-	// Use this for initialization
 	void Start () {
         startLight = GetComponent<Light>();
         StartCoroutine(Flashing());

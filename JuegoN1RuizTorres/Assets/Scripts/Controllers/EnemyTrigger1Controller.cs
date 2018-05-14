@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyTrigger1Controller : MonoBehaviour {
 
-    public GameObject enemy;
-    public GameObject thisBox;
-    public GameObject trigger;
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject thisBox;
+    [SerializeField] private GameObject trigger;
 
-    public bool triggerOn;
+    [SerializeField] private bool triggerOn;
 
     private void Update()
     {

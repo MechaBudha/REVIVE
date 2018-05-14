@@ -5,16 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour {
 
-    public GameObject backgroundMusic;
+    [SerializeField] private GameObject backgroundMusic;
 
     void Start()
     {
         backgroundMusic.SetActive(true);
         StartCoroutine(ChangeScene());
     }
-
-
-   
 
     IEnumerator ChangeScene()
     {

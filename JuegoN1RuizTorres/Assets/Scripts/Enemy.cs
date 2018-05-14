@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour {
 
-    public float deathDistance = 0.5f;
-    public float distanceAway;
-    public Transform thisObject;
-    public Transform target;
+    [SerializeField] private float deathDistance = 0.5f;
+    [SerializeField] private float distanceAway;
+    [SerializeField] private Transform thisObject;
+    [SerializeField] private Transform target;
     private NavMeshAgent navComponent;
 
 	void Start ()
@@ -17,7 +17,6 @@ public class Enemy : MonoBehaviour {
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
         float dist = Vector3.Distance(target.position, transform.position);

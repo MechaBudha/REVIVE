@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DisableEnemyController : MonoBehaviour {
 
-    public GameObject enemy;
-    public GameObject thisBox;
-    public Light lights;
-    public GameObject[] box = null;
-    public GameObject flashlight;
-    //public GameObject button;
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject thisBox;
+    [SerializeField] private Light lights;
+    [SerializeField] private GameObject[] box = null;
+    [SerializeField] private GameObject flashlight;
+    //[SerializeField] private GameObject button;
     [SerializeField]private AudioSource lightsOff;
 
     public bool triggerOn;
@@ -22,7 +22,6 @@ public class DisableEnemyController : MonoBehaviour {
 
             foreach (GameObject go in box)
             {
-
                 Renderer renderer = go.GetComponent<Renderer>();
                 Material mat = renderer.material;
 
@@ -32,9 +31,7 @@ public class DisableEnemyController : MonoBehaviour {
                 Color finalColor = baseColor * Mathf.LinearToGammaSpace(emission);
 
                 mat.SetColor("_EmissionColor", finalColor);
-
             }
-
             flashlight.GetComponent<Flashlight>().flashLight.enabled = false;
         }
     }

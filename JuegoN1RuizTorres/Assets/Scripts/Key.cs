@@ -5,16 +5,39 @@ using UnityEngine;
 public class Key : MonoBehaviour {
 
     [SerializeField] int score;
-    public GameObject triggerObject;
-    public GameObject trigger;
+    [SerializeField] private GameObject triggerObject;
+    [SerializeField] private GameObject thisObject;
+    [SerializeField] private GameObject trigger;
+    [SerializeField] private GameObject backgroundMusic;
+    [SerializeField] private AudioSource teddy;
+    [SerializeField] private bool pickUp;
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
+        if (pickUp == true)
+        {
+            StartCoroutine(DeleteThisBox());
+        }
+    }
+
+    public void OpenWinDoor()
+    {
+        pickUp = true;
         triggerObject.GetComponent<TurnOffLightsController>().enabled = true;
         trigger.SetActive(true);
+        backgroundMusic.SetActive(false);
+        teddy.Play();
 
         ScoreManager.Instance.Score += score;
-        Destroy(gameObject);
+    }
+
+    IEnumerator DeleteThisBox()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        thisObject.SetActive(false);
+
+        thisObject.GetComponent<Key>().enabled = false;
 
     }
 }

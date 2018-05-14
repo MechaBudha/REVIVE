@@ -3,27 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorController : MonoBehaviour {
-    
-    public Animator _animator;
-    public bool doorIsOpening;
-    //public GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
-    public GameObject triggerObject;
-    public GameObject triggerEnemy;
-    public GameObject thisBox;
-    public GameObject bgm1;
-    public AudioSource bgm2;
-    public AudioSource button;
-    public GameObject trigger;
+
+    [SerializeField] private Animator _animator;
+    [SerializeField] private bool doorIsOpening;
+    //[SerializeField] private GameObject secondEnemyObject;                            //Cuando esta en true activa el trigger
+    [SerializeField] private GameObject triggerObject;
+    [SerializeField] private GameObject triggerEnemy;
+    [SerializeField] private GameObject thisBox;
+    [SerializeField] private GameObject bgm1;
+    [SerializeField] private AudioSource bgm2;
+    [SerializeField] private AudioSource button;
+    [SerializeField] private GameObject trigger;
 
     void Update()
     {
-
         if (doorIsOpening == true)
         {
-
             _animator.SetBool("open", true);
-
-
             StartCoroutine(DeleteThisBox());
         }
     }

@@ -5,21 +5,17 @@ using UnityEngine;
 public class Door4Controller : MonoBehaviour
 {
 
-    public Animator _animator;
-    public GameObject thisButton;
-    //public GameObject trigger;
-    public AudioSource button;
-
-    public bool door4IsOpening;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private GameObject thisButton;
+    //[SerializeField] private GameObject trigger;
+    [SerializeField] private AudioSource button;
+    [SerializeField] private bool door4IsOpening;
 
     void Update()
     {
-
         if (door4IsOpening == true)
         {
-
             _animator.SetBool("open", true);
-
         }
     }
 

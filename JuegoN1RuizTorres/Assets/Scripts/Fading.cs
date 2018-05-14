@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Fading : MonoBehaviour {
 
-    public Texture2D fadeOutTexture;
-    public float fadeSpeed = 0.8f;
+    [SerializeField] private Texture2D fadeOutTexture;
+    [SerializeField] private float fadeSpeed = 0.8f;
 
     private int drawDepth = -1000;
     private float alpha = 1.0f;

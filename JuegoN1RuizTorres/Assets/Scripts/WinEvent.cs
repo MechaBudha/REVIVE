@@ -12,8 +12,6 @@ public class WinEvent : MonoBehaviour {
 
         if(other.CompareTag("Player"))
         {
-
-            Debug.Log("Hello");
             if (ScoreManager.Instance.Score >= 200)
             {
                 SceneManager.LoadScene(nextScene);

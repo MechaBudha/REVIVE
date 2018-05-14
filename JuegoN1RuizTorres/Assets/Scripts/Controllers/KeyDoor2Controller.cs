@@ -6,26 +6,14 @@ public class KeyDoor2Controller : MonoBehaviour {
 
     //public GameObject triggerObject;
     [SerializeField] int score;
-    public AudioSource keyPickup;
-    public AudioSource enemyWalk;
-
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
+    [SerializeField] private AudioSource keyPickup;
+    [SerializeField] private AudioSource enemyWalk;
 
     public void PickUp()
     {
-
         ScoreManager.Instance.Score += score;
         keyPickup.Play();
         enemyWalk.Play();
         Destroy(gameObject);
-
-
     }
 }

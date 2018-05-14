@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Door3Controller : MonoBehaviour {
 
-    public Animator _animator;
-    public GameObject thisBox;
-    public AudioSource _audioSource;
-    public AudioSource _audioSource2;
-    //public AudioClip doorOpenSound;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private GameObject thisBox;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioSource _audioSource2;
+    //[SerializeField] private AudioClip doorOpenSound;
 
-    public bool doorIsOpening;
+    [SerializeField] private bool doorIsOpening;
    
     void Update()
     {
-
         if (doorIsOpening == true)
         {
             _animator.SetBool("open", true);
-
             //GetComponent<AudioSource>().PlayOneShot(doorOpenSound);
         }
     }

@@ -5,12 +5,12 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class JumpScareController : MonoBehaviour {
 
-    public AudioSource _audioSource;
-    public GameObject enemy;
-    public GameObject jumpBox;
-    public GameObject playerObject;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject jumpBox;
+    [SerializeField] private GameObject playerObject;
 
-    public bool triggerOn;
+    [SerializeField] private bool triggerOn;
 
     void Update()
     {
@@ -18,7 +18,6 @@ public class JumpScareController : MonoBehaviour {
         {
             //_audioSource.PlayOneShot(piano);
             //_audioSource.clip = piano;
-
 
             enemy.SetActive(true);
 

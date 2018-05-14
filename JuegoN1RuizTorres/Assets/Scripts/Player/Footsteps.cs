@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Footsteps : MonoBehaviour {
 
-    public float walkRepeatingTime = 0.8f;
-    public float runRepeatingTime = 0.4f;
+    [SerializeField] private float walkRepeatingTime = 0.8f;
+    [SerializeField] private float runRepeatingTime = 0.4f;
 
     private bool isRuning = false;
     private bool isWalking = false;
     private bool waitForNextStep = false;
 
     private AudioSource _stepSoundPlayer;
-    public AudioClip[] _randomStepSounds;
+    [SerializeField] private AudioClip[] _randomStepSounds;
 
     void Start()
     {
