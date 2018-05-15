@@ -441,6 +441,7 @@
     <Compile Include="Assets\Scripts\Controllers\KeyDoor2Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\LightsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PaperController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Radio1Controller.cs" />
     <Compile Include="Assets\Scripts\Controllers\TurnOffLightsController.cs" />
     <Compile Include="Assets\Scripts\Credits.cs" />
     <Compile Include="Assets\Scripts\DoorLocked.cs" />
