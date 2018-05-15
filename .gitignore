@@ -7,3 +7,6 @@ DV2-JuegoN1/JuegoN1RuizTorres/UnityPackageManager/
 *.sln
 
 *.csproj
+JuegoN1RuizTorres/Library/
+
+JuegoN1RuizTorres/\.vs/

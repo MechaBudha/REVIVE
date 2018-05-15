@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
@@ -17,6 +18,7 @@ public class Weapon : MonoBehaviour {
     [SerializeField] private Transform shootPoint;                          //El punto de donde salen las balas
     [SerializeField] private GameObject hitParticles;
     [SerializeField] private GameObject bulletImpact;
+    //[SerializeField] private GameObject thisWeapon;
 
     [SerializeField] private ParticleSystem muzzleFlash;
     [SerializeField] private AudioClip shootSound;
@@ -43,6 +45,12 @@ public class Weapon : MonoBehaviour {
 
     void Update()
     {
+        //ESTO ES SOLO PARA QUE PIERDA SI NO TIENE BALAS
+        if (bulletsLeft ==  0 && currentBullets == 0)
+        {
+            StartCoroutine(LoseScene());                                 //Si no tiene balas, se termina el juego
+        }
+
         if (Input.GetButton("Fire1"))
         {
             if (currentBullets > 0)
@@ -141,5 +149,13 @@ public class Weapon : MonoBehaviour {
     private void UpdadateAmmoText()
     {
         ammoText.text = currentBullets + " / " + bulletsLeft;
+    }
+
+    IEnumerator LoseScene()
+    {
+        //thisWeapon.SetActive(false);
+        float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene("Lose");
     }
 }
