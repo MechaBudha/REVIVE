@@ -33,6 +33,7 @@ public class Weapon : MonoBehaviour {
     private void OnEnable()
     {
         UpdadateAmmoText();
+        
     }
 
     void Start()
@@ -41,6 +42,8 @@ public class Weapon : MonoBehaviour {
         _AudioSource = GetComponent<AudioSource>();
         currentBullets = bulletsPerMag;
         UpdadateAmmoText();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
@@ -97,8 +100,8 @@ public class Weapon : MonoBehaviour {
                 GameObject bulletHole = Instantiate(bulletImpact, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
                 bulletHole.transform.SetParent(hit.transform);
 
-                Destroy(hitParticleEffect, 1f);
-                Destroy(bulletHole, 4f);
+                Destroy(hitParticleEffect, 1.2f);
+                //Destroy(bulletHole, 4f);
 
                 if (hit.transform.GetComponent<HealthController>())              //Esto pregunta si el objeto al que le disparamos tiene el controlador de vida
                 {

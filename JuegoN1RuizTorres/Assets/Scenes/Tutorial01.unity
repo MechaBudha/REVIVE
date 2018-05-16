@@ -5605,12 +5605,12 @@ Prefab:
     - target: {fileID: 114801946665746162, guid: 9f559d38bfef8ae4ea297865dc5713be,
         type: 2}
       propertyPath: walkSpeed
-      value: 1.6
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 114439435661595076, guid: 9f559d38bfef8ae4ea297865dc5713be,
         type: 2}
       propertyPath: walkRepeatingTime
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82511973256191964, guid: 9f559d38bfef8ae4ea297865dc5713be,
         type: 2}
@@ -5635,7 +5635,7 @@ Prefab:
     - target: {fileID: 114439435661595076, guid: 9f559d38bfef8ae4ea297865dc5713be,
         type: 2}
       propertyPath: runRepeatingTime
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82511973256191964, guid: 9f559d38bfef8ae4ea297865dc5713be,
         type: 2}
