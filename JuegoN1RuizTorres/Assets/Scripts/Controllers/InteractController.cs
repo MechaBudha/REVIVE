@@ -33,7 +33,7 @@ public class InteractController : MonoBehaviour {
                 {
                     if(hitInfo.collider.CompareTag("Note"))
                     {
-                        hitInfo.collider.GetComponent<PaperController>().ShowNoteImage();
+                        hitInfo.collider.GetComponent<NotesController>().ShowNoteImage();
                     }
 
                     if (hitInfo.collider.CompareTag("Key2"))

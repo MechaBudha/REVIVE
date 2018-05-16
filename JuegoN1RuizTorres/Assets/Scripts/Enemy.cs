@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private float distanceAway;
     [SerializeField] private Transform thisObject;
     [SerializeField] private Transform target;
+    [SerializeField] private AudioSource laugh;
     private NavMeshAgent navComponent;
 
 	void Start ()
@@ -32,7 +33,8 @@ public class Enemy : MonoBehaviour {
         }
         if(dist <= deathDistance)
         {
-            //kill player
+            Destroy(thisObject);
+            laugh.Play();
         }
 	}
 }

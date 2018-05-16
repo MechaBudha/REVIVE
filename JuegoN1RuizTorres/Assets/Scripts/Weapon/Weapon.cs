@@ -88,7 +88,7 @@ public class Weapon : MonoBehaviour {
         {
             if (!hit.collider.isTrigger)
             {
-                Debug.Log(hit.transform.name + " found!");                      //Muestra el nombre del objeto al que golpea el raycast
+                //Debug.Log(hit.transform.name + " found!");                      //Muestra el nombre del objeto al que golpea el raycast
 
                 //Esto crea un chispaso justo donde pega el raycast
                 GameObject hitParticleEffect = Instantiate(hitParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
@@ -148,7 +148,7 @@ public class Weapon : MonoBehaviour {
 
     private void UpdadateAmmoText()
     {
-        ammoText.text = currentBullets + " / " + bulletsLeft;
+        //ammoText.text = currentBullets + " / " + bulletsLeft;
     }
 
     IEnumerator LoseScene()

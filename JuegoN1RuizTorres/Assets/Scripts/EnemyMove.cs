@@ -10,9 +10,10 @@ public class EnemyMove : MonoBehaviour {
 
     [SerializeField] private Transform target;
     [SerializeField] private Transform myTransform;
-    
-    
-	void Update () {
+    [SerializeField] private AudioSource laugh;
+
+
+    void Update () {
         transform.LookAt(target);
         //transform.Translate(Vector3.forward * speed * Time.deltaTime);
         if(Vector3.Distance(transform.position, target.position) >= minDist)
@@ -21,12 +22,24 @@ public class EnemyMove : MonoBehaviour {
 
             if (Vector3.Distance(transform.position, target.position) <= maxDist )
             {
-                //Destroy(this.gameObject);
-
+                /*Destroy(this.gameObject);
+                laugh.Play();*/
             }
 
         }
+
+        /*if (minDist > 6f)
+            Debug.Log("Hola");*/
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        { // check if it's the player, if you want
+            Destroy(this.gameObject);
+            laugh.Play();
+        }
+    }
 
     /*private void OnBecameVisible()
     {
