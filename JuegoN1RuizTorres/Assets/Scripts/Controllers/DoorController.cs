@@ -14,6 +14,7 @@ public class DoorController : MonoBehaviour {
     [SerializeField] private AudioSource bgm2;
     [SerializeField] private AudioSource button;
     [SerializeField] private GameObject trigger;
+    [SerializeField] private GameObject radio2;
 
     void Update()
     {
@@ -35,6 +36,7 @@ public class DoorController : MonoBehaviour {
         bgm2.Play();
         button.Play();
         trigger.SetActive(true);
+        radio2.SetActive(true);
         //secondEnemyObject.SetActive(true);
         //secondEnemyObject.GetComponent<FirstChaseController>().enabled = true;
     }
@@ -43,7 +45,7 @@ public class DoorController : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.5f);
 
-        thisBox.SetActive(false);
+        //thisBox.SetActive(false);
 
         thisBox.GetComponent<DoorController>().enabled = false;
 
