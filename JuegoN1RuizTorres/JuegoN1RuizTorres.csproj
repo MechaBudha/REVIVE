@@ -447,6 +447,8 @@
     <Compile Include="Assets\Scripts\Controllers\JumpScareController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Key.cs" />
     <Compile Include="Assets\Scripts\Controllers\KeyDoor2Controller.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Level-2\DoorMazeController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Level-2\OpenDoorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\LightsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\NotesController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PaperController.cs" />

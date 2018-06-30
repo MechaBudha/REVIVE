@@ -60,6 +60,16 @@ public class InteractController : MonoBehaviour {
                     {
                         hitInfo.collider.GetComponent<Key>().OpenWinDoor();
                     }
+
+                    if (hitInfo.collider.CompareTag("ButtonMaze"))
+                    {
+                        hitInfo.collider.GetComponent<DoorMazeController>().OpenDoor();
+                    }
+
+                    if (hitInfo.collider.CompareTag("Open"))
+                    {
+                        hitInfo.collider.GetComponent<OpenDoorController>().OpenDoor();
+                    }
                 }
             }
         }
