@@ -70,6 +70,16 @@ public class InteractController : MonoBehaviour {
                     {
                         hitInfo.collider.GetComponent<OpenDoorController>().OpenDoor();
                     }
+
+                    if (hitInfo.collider.CompareTag("Wall"))
+                    {
+                        hitInfo.collider.GetComponent<WallController>().OpenWall();
+                    }
+
+                    if (hitInfo.collider.CompareTag("Key"))
+                    {
+                        hitInfo.collider.GetComponent<KeyController>().PickUp();
+                    }
                 }
             }
         }
