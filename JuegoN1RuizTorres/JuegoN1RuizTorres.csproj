@@ -459,6 +459,8 @@
     <Compile Include="Assets\Scripts\Controllers\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\TurnOffLightsController.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyDistance.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyLook.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyMove.cs" />
     <Compile Include="Assets\Scripts\Events\Lose.cs" />
     <Compile Include="Assets\Scripts\Events\WallEvent.cs" />
@@ -467,6 +469,7 @@
     <Compile Include="Assets\Scripts\Player\FlashlightOffset.cs" />
     <Compile Include="Assets\Scripts\Player\Footsteps.cs" />
     <Compile Include="Assets\Scripts\Player\HeadBob.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerJump.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\ScenesScripts\Credits.cs" />
