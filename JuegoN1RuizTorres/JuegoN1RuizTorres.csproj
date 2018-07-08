@@ -381,6 +381,7 @@
     <Compile Include="Assets\Aura\Structs\VolumeInjectionShape.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeLevelsData.cs" />
     <Compile Include="Assets\Aura\Structs\VolumeTextureData.cs" />
+    <Compile Include="Assets\Objects\Clock\Scripts\Clock.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
