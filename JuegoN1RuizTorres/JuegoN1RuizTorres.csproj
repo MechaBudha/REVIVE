@@ -452,6 +452,8 @@
     <Compile Include="Assets\Scripts\Controllers\Level-2\KeyController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Level-2\OpenDoorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Level-2\WallController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Level-3\EnableLookAt.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Level-3\LookAtController.cs" />
     <Compile Include="Assets\Scripts\Controllers\LightsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\NotesController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PaperController.cs" />
