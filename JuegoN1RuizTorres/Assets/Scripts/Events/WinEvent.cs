@@ -6,6 +6,7 @@ using UnityEngine;
 public class WinEvent : MonoBehaviour {
 
     [SerializeField] string nextScene;
+    [SerializeField] AudioSource _audio;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,8 +15,17 @@ public class WinEvent : MonoBehaviour {
         {
             if (ScoreManager.Instance.Score >= 200)
             {
-                SceneManager.LoadScene(nextScene);
+                _audio.Play();
+                StartCoroutine(ChangeLevel());
+                //SceneManager.LoadScene(nextScene);
             }
         }
+    }
+
+    IEnumerator ChangeLevel()
+    {
+        float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

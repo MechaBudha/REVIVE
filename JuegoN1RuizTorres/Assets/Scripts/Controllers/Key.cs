@@ -5,6 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour {
 
     [SerializeField] int score;
+    [SerializeField] private Animator _animator;
     [SerializeField] private GameObject triggerObject;
     [SerializeField] private GameObject thisObject;
     [SerializeField] private GameObject trigger;
@@ -16,6 +17,7 @@ public class Key : MonoBehaviour {
     {
         if (pickUp == true)
         {
+            _animator.SetBool("open", true);
             StartCoroutine(DeleteThisBox());
         }
     }
