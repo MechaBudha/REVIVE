@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     CharacterController charControl;
-    [SerializeField] private float walkSpeed;
+    public float walkSpeed;
     //public GameObject weapon;
     //private Animator anim;
 

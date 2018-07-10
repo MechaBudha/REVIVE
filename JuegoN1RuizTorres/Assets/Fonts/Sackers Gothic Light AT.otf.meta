@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 0f7d21704ffe5f44cb1fd07586fb47c5
+timeCreated: 1531190221
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sackers Gothic Light AT
+  fontNames:
+  - Sackers Gothic Light AT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -427,6 +427,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\CanvasScripts\FadeText.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\Gizmo.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\PauseMenu.cs" />

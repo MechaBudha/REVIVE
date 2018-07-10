@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class LookAtController : MonoBehaviour {
 
-
     //[SerializeField] Transform target;
+    [SerializeField] GameObject player;
     [SerializeField] Transform targetPoint;
     [SerializeField] float rotationDamping;
+    [SerializeField] float movementSpeed;
 
+    
     void Update () {
-        //transform.LookAt(target);
-
-        /*
-        Vector3 dir = targetPoint - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Quaternion newRotation = Quaternion.RotateTowards(transform.rotation, lookRotation, rotationDamping * Time.deltaTime);
-        transform.rotation = newRotation;
-        */
 
         Vector3 angles = transform.rotation.eulerAngles;
         Quaternion from = Quaternion.Euler(angles.x, angles.y, 0);
@@ -27,6 +21,8 @@ public class LookAtController : MonoBehaviour {
 
         transform.rotation = Quaternion.RotateTowards(from, to, rotationDamping * Time.deltaTime);
 
-        
+        player.transform.position += player.transform.forward * Time.deltaTime * movementSpeed;
+        //player.transform.position += player.transform.right * Time.deltaTime * movementSpeed;
+
     }
 }
