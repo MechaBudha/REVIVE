@@ -428,6 +428,7 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\FadeText.cs" />
+    <Compile Include="Assets\Scripts\CanvasScripts\FadeText1.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\Gizmo.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\CanvasScripts\PauseMenu.cs" />
@@ -454,6 +455,7 @@
     <Compile Include="Assets\Scripts\Controllers\Level-2\OpenDoorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Level-2\WallController.cs" />
     <Compile Include="Assets\Scripts\Controllers\Level-3\EnableLookAt.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Level-3\LightEnable.cs" />
     <Compile Include="Assets\Scripts\Controllers\Level-3\LookAtController.cs" />
     <Compile Include="Assets\Scripts\Controllers\LightsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\NotesController.cs" />

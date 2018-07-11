@@ -12,6 +12,7 @@ public class WallEvent : MonoBehaviour
             if (ScoreManager.Instance.Score >= 300)
             {
                 wall.GetComponent<WallController>().enabled = true;
+                wall.GetComponent<BoxCollider>().enabled = true;
             }
     }
 }

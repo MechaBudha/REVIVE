@@ -9,6 +9,7 @@ public class EnableLookAt : MonoBehaviour {
     [SerializeField] GameObject player;
     [SerializeField] AudioSource bm5;
     [SerializeField] GameObject canvas;
+    [SerializeField] GameObject text1;
 
     [SerializeField] GameObject playerLook;
     [SerializeField] GameObject playerMove;
@@ -32,12 +33,18 @@ public class EnableLookAt : MonoBehaviour {
 
         walk.enabled = false;
 
+        StartCoroutine(ChangeToText());
         StartCoroutine(ChangeToCanvas());
     }
 
-    private void Update()
+    IEnumerator ChangeToText()
     {
+        yield return new WaitForSeconds(30f);
 
+        text1.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     IEnumerator ChangeToCanvas()
