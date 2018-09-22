@@ -32,8 +32,6 @@ public class Flashlight : MonoBehaviour {
                 isActive = false;
                 audioSource.PlayOneShot(flashlightSwitch);
             }
-        }
-
-        
+        }    
 	}
 }

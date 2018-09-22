@@ -26,5 +26,4 @@ public class FlashlightOffset : MonoBehaviour {
         Vector3 finalPosition = new Vector3(movementX, movementY, 0); //Calculamos la nueva posicion donde va a estar el arma, etc
         transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + initialPosition, Time.deltaTime * smoothAmount);
     }
-
 }

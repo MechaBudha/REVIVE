@@ -58,12 +58,7 @@ public class Footsteps : MonoBehaviour {
     {   
         
         yield return new WaitForSeconds(delayTime);
-        /*
-        _stepSoundPlayer.clip = _randomStepSounds[Random.Range(0, _randomStepSounds.Length)];
-        waitForNextStep = false;
-        _stepSoundPlayer.Play();
-        */
-
+      
         int n = Random.Range(1, _randomStepSounds.Length);
         _stepSoundPlayer.clip = _randomStepSounds[n];
         waitForNextStep = false;
