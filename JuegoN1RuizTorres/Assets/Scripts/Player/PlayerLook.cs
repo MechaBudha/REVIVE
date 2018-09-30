@@ -6,26 +6,28 @@ public class PlayerLook : MonoBehaviour
 {
     [SerializeField] private Transform playerBody;
     [SerializeField] private float mouseSensitivity;
-
+	private InputManager InputMg;
     private float xAxisClamp = 0.0f;
 
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
+		InputMg = InputManager.Instance;
     }
 
     void Update()
     {
+		
         RotateCamera();
     }
 
     void RotateCamera()
     {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
+		Vector3 rot = InputMg.GetRotation ();
 
-        float rotAmountX = mouseX * mouseSensitivity;
-        float rotAmountY = mouseY * mouseSensitivity;
+		float rotAmountX = rot.x * mouseSensitivity;
+		float rotAmountY = rot.y * mouseSensitivity;
+		float rotAmountZ = rot.z;
 
         xAxisClamp -= rotAmountY;
 
@@ -33,7 +35,7 @@ public class PlayerLook : MonoBehaviour
         Vector3 targetRotBody = playerBody.rotation.eulerAngles;
 
         targetRotCam.x -= rotAmountY;
-        targetRotCam.z = 0;
+        targetRotCam.z += rotAmountZ;
         targetRotBody.y += rotAmountX;
 
         if (xAxisClamp > 90)

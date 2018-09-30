@@ -6,14 +6,14 @@ PlayerSettings:
   serializedVersion: 15
   productGUID: e83577b3a68599045adea65daafb1702
   AndroidProfiler: 0
-  AndroidFilterTouchesWhenObscured: 0
-  AndroidEnableSustainedPerformanceMode: 0
+  AndroidFilterTouchesWhenObscured: 1
+  AndroidEnableSustainedPerformanceMode: 1
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: com.Ejemplo.Ejempluli
+  companyName: Image Campus
+  productName: REVIVE
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -151,7 +151,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.ejemplo.Ejempluli
+    Android: com.ImageCampus.REVIVE
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -245,7 +245,7 @@ PlayerSettings:
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
-  AndroidTVCompatibility: 1
+  AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
@@ -254,7 +254,7 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
-  androidGamepadSupportLevel: 0
+  androidGamepadSupportLevel: 1
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons: []
   m_BuildTargetPlatformIcons:
