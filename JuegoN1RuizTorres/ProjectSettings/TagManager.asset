@@ -5,15 +5,25 @@ TagManager:
   serializedVersion: 2
   tags:
   - Note
-  - Key2
   - Button
   - Door
-  - ButtonKey
   - Teddy
   - ButtonMaze
   - Open
   - Key
   - Wall
+  - Key1
+  - Button2
+  - TriggerZero
+  - TriggerOne
+  - TriggerTwo
+  - TriggerThree
+  - TriggerFour
+  - TriggerFive
+  - TriggerSix
+  - TriggerSeven
+  - TriggerEight
+  - TriggerNine
   layers:
   - Default
   - TransparentFX
