@@ -17,7 +17,7 @@ public class FlashlightOffset : MonoBehaviour {
 
     void Update()
     {
-		Vector2 mov = InputManager.Instance.GetDirection ();
+		Vector3 mov = InputManager.Instance.GetRotation();
 
 		float movementX = -mov.x * amount;   //Si me muevo para la derecha el arma se va a ir para la izquierda
 		float movementY = -mov.y * amount;

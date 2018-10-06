@@ -62,7 +62,9 @@ public class PlayerLook : MonoBehaviour
 		if(InputMg.GetCameraReset()){
 			transform.rotation = InitialRotation;
 			playerBody.transform.rotation = InitialBodyRotation;
-			charControl.transform.rotation = InitialBodyRotation;
+			charControl.transform.rotation = Quaternion.Euler (Vector3.zero);
 		}
+
+		Debug.Log (charControl.transform.rotation);
     }
 }
