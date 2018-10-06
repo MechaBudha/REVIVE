@@ -65,6 +65,6 @@ public class PlayerLook : MonoBehaviour
 			charControl.transform.rotation = Quaternion.Euler (Vector3.zero);
 		}
 
-		Debug.Log (charControl.transform.rotation);
+		//Debug.Log (charControl.transform.rotation);
     }
 }
