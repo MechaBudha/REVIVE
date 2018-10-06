@@ -36,14 +36,19 @@ public class InteractController : MonoBehaviour {
                         hitInfo.collider.GetComponent<NotesController>().ShowNoteImage();
                     }
 
-                    if (hitInfo.collider.CompareTag("Key2"))
+                    if (hitInfo.collider.CompareTag("Key1"))
                     {
-                        hitInfo.collider.GetComponent<KeyDoor2Controller>().PickUp();
+                        hitInfo.collider.GetComponent<KeyController>().PickUp();
                     }
 
                     if (hitInfo.collider.CompareTag("Button"))
                     {
-                        hitInfo.collider.GetComponent<Door4Controller>().OpenDoor4();
+                        hitInfo.collider.GetComponent<ButtonController>().FirstButton();
+                    }
+
+                    if (hitInfo.collider.CompareTag("Button2"))
+                    {
+                        hitInfo.collider.GetComponent<ButtonController>().SecondButton();
                     }
 
                     if (hitInfo.collider.CompareTag("Door"))
@@ -51,14 +56,9 @@ public class InteractController : MonoBehaviour {
                         hitInfo.collider.GetComponent<DoorLocked>().TryToOpen();
                     }
 
-                    if (hitInfo.collider.CompareTag("ButtonKey"))
-                    {
-                        hitInfo.collider.GetComponent<DoorController>().OpenKeyDoor();
-                    }
-
                     if (hitInfo.collider.CompareTag("Teddy"))
                     {
-                        hitInfo.collider.GetComponent<Key>().OpenWinDoor();
+                        hitInfo.collider.GetComponent<BearController>().PickUp();
                     }
 
                     if (hitInfo.collider.CompareTag("ButtonMaze"))
@@ -78,7 +78,7 @@ public class InteractController : MonoBehaviour {
 
                     if (hitInfo.collider.CompareTag("Key"))
                     {
-                        hitInfo.collider.GetComponent<KeyController>().PickUp();
+                        hitInfo.collider.GetComponent<KeysController>().PickUp();
                     }
                 }
             }
