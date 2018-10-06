@@ -16,4 +16,16 @@ public class InputPC : IInput{
 		rot.z = 0;
 		return rot;
 	}
+	public bool GetFlash(){
+		return Input.GetKeyDown (KeyCode.F);
+	}
+	public bool GetAct(){
+		return Input.GetKeyDown (KeyCode.Mouse0);
+	}
+	public bool GetCamReset(){
+		return false;
+	}
+	public bool GetPause(){
+		return Input.GetKeyDown (KeyCode.Escape);
+	}
 }

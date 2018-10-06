@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour {
     [SerializeField] private GameObject pauseMenuUI;
 
     void Update () {
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (InputManager.Instance.GetPause())
         {
             if (GameIsPause)
                 Resume();

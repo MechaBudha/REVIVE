@@ -10076,8 +10076,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuScript: {fileID: 325543744}
-  player: {fileID: 0}
-  playerHB: {fileID: 0}
   playerCamera: {fileID: 0}
   playerWeapon: {fileID: 0}
   sound: {fileID: 114765915}

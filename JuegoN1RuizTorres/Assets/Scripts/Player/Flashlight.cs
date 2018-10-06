@@ -18,7 +18,7 @@ public class Flashlight : MonoBehaviour {
     }
 
     void Update () {
-		if (Input.GetKeyDown(KeyCode.F))
+		if (InputManager.Instance.GetFlash())
         {
             if (!isActive)
             {

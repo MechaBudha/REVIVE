@@ -18,7 +18,7 @@ public class InputManager : MonoBehaviour {
 	void Awake ()
 	{
 		if(instance != this){
-			Destroy (this);
+			Destroy (gameObject);
 		}
 		#if UNITY_ANDROID
 		input = new InputAndroid();
@@ -35,5 +35,17 @@ public class InputManager : MonoBehaviour {
 	}
 	public Vector3 GetRotation(){
 		return input.GetRot ();
+	}
+	public bool GetAction(){
+		return input.GetAct ();
+	}
+	public bool GetFlash(){
+		return input.GetFlash ();
+	}
+	public bool GetCameraReset(){
+		return input.GetCamReset ();
+	}
+	public bool GetPause(){
+		return input.GetPause ();
 	}
 }

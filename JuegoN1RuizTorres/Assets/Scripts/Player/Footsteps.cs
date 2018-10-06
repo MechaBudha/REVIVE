@@ -20,11 +20,11 @@ public class Footsteps : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+		if (InputManager.Instance.GetDirection().y != 0)
         {
             isWalking = true;
         }
-        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S))
+		if (InputManager.Instance.GetDirection().y == 0)
         {
             isWalking = false;
         }

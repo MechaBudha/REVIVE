@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    [SerializeField] private Transform playerBody;
+    [SerializeField] private GameObject playerBody;
     [SerializeField] private float mouseSensitivity;
+	private CharacterController charControl;
+	private Quaternion InitialBodyRotation;
+	private Quaternion InitialRotation;
 	private InputManager InputMg;
     private float xAxisClamp = 0.0f;
 
@@ -13,6 +16,9 @@ public class PlayerLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
 		InputMg = InputManager.Instance;
+		InitialBodyRotation = playerBody.transform.rotation;
+		InitialRotation = transform.rotation;
+		charControl = GetComponentInParent<CharacterController>();
     }
 
     void Update()
@@ -32,7 +38,7 @@ public class PlayerLook : MonoBehaviour
         xAxisClamp -= rotAmountY;
 
         Vector3 targetRotCam = transform.rotation.eulerAngles;
-        Vector3 targetRotBody = playerBody.rotation.eulerAngles;
+        Vector3 targetRotBody = playerBody.transform.rotation.eulerAngles;
 
         targetRotCam.x -= rotAmountY;
         targetRotCam.z += rotAmountZ;
@@ -50,6 +56,13 @@ public class PlayerLook : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Euler(targetRotCam);
-        playerBody.rotation = Quaternion.Euler(targetRotBody);
+        playerBody.transform.rotation = Quaternion.Euler(targetRotBody);
+		charControl.transform.rotation = Quaternion.Euler (targetRotBody);
+
+		if(InputMg.GetCameraReset()){
+			transform.rotation = InitialRotation;
+			playerBody.transform.rotation = InitialBodyRotation;
+			charControl.transform.rotation = InitialBodyRotation;
+		}
     }
 }
