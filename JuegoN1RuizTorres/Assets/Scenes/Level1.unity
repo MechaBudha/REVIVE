@@ -653,19 +653,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268a7c22f5a754f439aac3c1092c5f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tcScript: []
-  btScript: []
-  brScript: {fileID: 0}
-  as1: {fileID: 0}
-  as2: {fileID: 0}
-  as3: {fileID: 0}
-  as4: {fileID: 0}
-  as5: {fileID: 0}
-  as6: {fileID: 0}
-  bt1: {fileID: 0}
-  bg1: {fileID: 0}
-  bg2: {fileID: 0}
-  bear: {fileID: 0}
+  tcScript:
+  - {fileID: 1195916616}
+  - {fileID: 537264214}
+  - {fileID: 1737829781}
+  - {fileID: 2001144825}
+  - {fileID: 1340864655}
+  btScript:
+  - {fileID: 112942408}
+  - {fileID: 1444185917}
+  - {fileID: 1444185917}
+  brScript: {fileID: 871988977}
+  as1: {fileID: 1371476076}
+  as2: {fileID: 1195054995}
+  as3: {fileID: 1371476076}
+  as4: {fileID: 756395895}
+  as5: {fileID: 114765915}
+  as6: {fileID: 2059970406}
+  bt1: {fileID: 1310146587}
+  bg1: {fileID: 1195054995}
+  bg2: {fileID: 288827535}
+  bear: {fileID: 1486467811}
 --- !u!1 &25574790
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,16 +967,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2ac236d6384cf47be63c6ab83177a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tcScript: []
-  btScript: {fileID: 0}
-  bearScript: {fileID: 0}
-  lightsRed: []
-  boxRed: []
-  allLights: []
-  allBox: []
-  boxOff: []
-  flashlight: {fileID: 0}
-  lightOff: {fileID: 0}
+  tcScript:
+  - {fileID: 630398744}
+  - {fileID: 2001144825}
+  - {fileID: 1132261195}
+  btScript: {fileID: 1444185917}
+  bearScript: {fileID: 871988977}
+  lightsRed:
+  - {fileID: 1961569002}
+  - {fileID: 1397155073}
+  - {fileID: 1473935821}
+  - {fileID: 1051862878}
+  - {fileID: 1956304434}
+  - {fileID: 2756319}
+  - {fileID: 2096495731}
+  - {fileID: 662986654}
+  boxRed:
+  - {fileID: 1900125213}
+  - {fileID: 391646106}
+  - {fileID: 667938971}
+  - {fileID: 703049400}
+  - {fileID: 2146802692}
+  - {fileID: 803373052}
+  - {fileID: 1094745963}
+  - {fileID: 1375827254}
+  allLights:
+  - {fileID: 1961569002}
+  - {fileID: 1397155073}
+  - {fileID: 1473935821}
+  - {fileID: 1051862878}
+  - {fileID: 1956304434}
+  - {fileID: 2756319}
+  - {fileID: 2096495731}
+  - {fileID: 662986654}
+  allBox:
+  - {fileID: 1900125213}
+  - {fileID: 391646106}
+  - {fileID: 667938971}
+  - {fileID: 703049400}
+  - {fileID: 2146802692}
+  - {fileID: 803373052}
+  - {fileID: 1094745963}
+  - {fileID: 1375827254}
+  boxOff:
+  - {fileID: 667938971}
+  flashlight: {fileID: 1876225290140058, guid: 85a82f7228b5fbb49b3eb918e281f72d, type: 2}
+  lightOff: {fileID: 1473935824}
 --- !u!1 &42879284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,8 +2577,8 @@ Transform:
   - {fileID: 692099473}
   - {fileID: 1610370137}
   - {fileID: 10484157}
-  - {fileID: 871988976}
   - {fileID: 1547520162}
+  - {fileID: 871988976}
   - {fileID: 735396701}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -3076,8 +3120,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112942405}
-  - component: {fileID: 112942407}
   - component: {fileID: 112942406}
+  - component: {fileID: 112942408}
   m_Layer: 8
   m_Name: Button1
   m_TagString: Button
@@ -3112,7 +3156,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25976944, y: 0.24715042, z: 0.07481003}
   m_Center: {x: 0.53253937, y: 0.014031649, z: 1.2675114}
---- !u!114 &112942407
+--- !u!114 &112942408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3120,13 +3164,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 112942404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2790deaadfe2ed4e8f0262f9a1a5422, type: 3}
+  m_Script: {fileID: 11500000, guid: d2d73d03474e4e741a82af8a1e960673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 365683534}
-  thisButton: {fileID: 112942404}
-  button: {fileID: 1310146587}
-  door4IsOpening: 0
+  buttonOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  buttonTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &113311740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,12 +6549,12 @@ GameObject:
   - component: {fileID: 210547713}
   - component: {fileID: 210547712}
   m_Layer: 0
-  m_Name: EnemyTrigger3
-  m_TagString: Untagged
+  m_Name: TriggerNine
+  m_TagString: TriggerNine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &210547711
 Transform:
   m_ObjectHideFlags: 0
@@ -6526,12 +6576,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 210547710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed0a32a0b4d615e4fafe3fe4af54ae24, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1471663889}
-  thisBox: {fileID: 210547710}
-  triggerOn: 0
+  trigger: {fileID: 210547710}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &210547713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11462,13 +11560,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d21a6ec2b2d2f94e85b45af39d5cf33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tcScript: []
-  btScript: []
-  et1: {fileID: 0}
-  et2: {fileID: 0}
-  et3: {fileID: 0}
-  bt1: {fileID: 0}
-  bt2: {fileID: 0}
+  tcScript:
+  - {fileID: 402167509}
+  - {fileID: 2001144825}
+  - {fileID: 210547712}
+  btScript:
+  - {fileID: 112942408}
+  - {fileID: 1444185917}
+  et1: {fileID: 1468218699}
+  et2: {fileID: 2128193721}
+  et3: {fileID: 1471663889}
+  bt1: {fileID: 112942404}
+  bt2: {fileID: 1444185913}
 --- !u!1 &362952110
 GameObject:
   m_ObjectHideFlags: 0
@@ -12470,12 +12573,12 @@ GameObject:
   - component: {fileID: 402167510}
   - component: {fileID: 402167509}
   m_Layer: 0
-  m_Name: EnemyTrigger
-  m_TagString: Untagged
+  m_Name: TriggerFive
+  m_TagString: TriggerFive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &402167508
 Transform:
   m_ObjectHideFlags: 0
@@ -12497,13 +12600,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 402167507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ee95d1af4eed40acf40c67dd91489, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1468218699}
-  thisBox: {fileID: 402167507}
-  trigger: {fileID: 2001144823}
-  triggerOn: 0
+  trigger: {fileID: 402167507}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &402167510
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16344,8 +16494,8 @@ GameObject:
   - component: {fileID: 537264216}
   - component: {fileID: 537264214}
   m_Layer: 0
-  m_Name: OpenDoorRoom2
-  m_TagString: Untagged
+  m_Name: TriggerTwo
+  m_TagString: TriggerTwo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16358,13 +16508,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 537264213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c24491a4572c45949bdac08321365e82, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 71122915}
-  _audioSource: {fileID: 1371476076}
-  thisBox: {fileID: 537264213}
-  doorIsOpening: 0
+  trigger: {fileID: 537264213}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &537264216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18703,8 +18900,8 @@ GameObject:
   - component: {fileID: 630398745}
   - component: {fileID: 630398744}
   m_Layer: 0
-  m_Name: LightColorChanger
-  m_TagString: Untagged
+  m_Name: TriggerFour
+  m_TagString: TriggerFour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18715,30 +18912,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 630398743}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4beb20246472a51479c310b3a77da0be, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lights:
-  - {fileID: 1961569002}
-  - {fileID: 1397155073}
-  - {fileID: 1473935821}
-  - {fileID: 1051862878}
-  - {fileID: 1956304434}
-  - {fileID: 2756319}
-  - {fileID: 2096495731}
-  - {fileID: 662986654}
-  lightsAreRed: 0
-  Box:
-  - {fileID: 1900125213}
-  - {fileID: 391646106}
-  - {fileID: 667938971}
-  - {fileID: 703049400}
-  - {fileID: 2146802692}
-  - {fileID: 803373052}
-  - {fileID: 1094745963}
-  - {fileID: 1375827254}
+  trigger: {fileID: 630398743}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &630398745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20713,8 +20942,8 @@ GameObject:
   - component: {fileID: 657841060}
   - component: {fileID: 657841059}
   m_Layer: 0
-  m_Name: Enable1
-  m_TagString: Untagged
+  m_Name: TriggerZero
+  m_TagString: TriggerZero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20740,12 +20969,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 657841057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfff3871f64c6ab489314dfef7ab86ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openDoor3Trigger: {fileID: 1195916614}
-  thisBox: {fileID: 657841057}
-  triggerOn: 0
+  trigger: {fileID: 657841057}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &657841060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28752,17 +29029,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 871988975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07840966b1df4cb429a6836161e1580f, type: 3}
+  m_Script: {fileID: 11500000, guid: 084ce3278b0bb0541989b78ad255fd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
-  _animator: {fileID: 352256256}
-  triggerObject: {fileID: 1132261193}
-  thisObject: {fileID: 871988975}
-  trigger: {fileID: 210547710}
-  backgroundMusic: {fileID: 288827533}
-  teddy: {fileID: 1486467811}
-  pickUp: 0
+  bear:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  br: {fileID: 871988975}
 --- !u!65 &871988980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36835,8 +37110,8 @@ GameObject:
   - component: {fileID: 1132261196}
   - component: {fileID: 1132261195}
   m_Layer: 0
-  m_Name: LightOffTrigger
-  m_TagString: Untagged
+  m_Name: TriggerEight
+  m_TagString: TriggerEight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36860,30 +37135,62 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1132261193}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da6689a0d0fdd864aa54f4e01cb4a613, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lights:
-  - {fileID: 1961569002}
-  - {fileID: 1397155073}
-  - {fileID: 1473935821}
-  - {fileID: 1051862878}
-  - {fileID: 1956304434}
-  - {fileID: 2756319}
-  - {fileID: 2096495731}
-  - {fileID: 662986654}
-  Box:
-  - {fileID: 1900125213}
-  - {fileID: 391646106}
-  - {fileID: 667938971}
-  - {fileID: 703049400}
-  - {fileID: 2146802692}
-  - {fileID: 803373052}
-  - {fileID: 1094745963}
-  - {fileID: 1375827254}
-  onOff: 0
+  trigger: {fileID: 1132261193}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1132261196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37829,9 +38136,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3023f59ed472d7f42b838caea1d0227e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tcScript: []
-  btScript: {fileID: 0}
-  bearScript: {fileID: 0}
+  tcScript:
+  - {fileID: 657841059}
+  - {fileID: 1195916616}
+  - {fileID: 537264214}
+  - {fileID: 1737829781}
+  - {fileID: 630398744}
+  - {fileID: 402167509}
+  - {fileID: 2001144825}
+  - {fileID: 1340864655}
+  - {fileID: 1132261195}
+  - {fileID: 210547712}
+  btScript: {fileID: 1444185917}
+  bearScript: {fileID: 871988977}
 --- !u!1 &1173850986
 GameObject:
   m_ObjectHideFlags: 0
@@ -38851,12 +39168,12 @@ GameObject:
   - component: {fileID: 1195916617}
   - component: {fileID: 1195916616}
   m_Layer: 0
-  m_Name: OpenDoorRoom3
-  m_TagString: Untagged
+  m_Name: TriggerOne
+  m_TagString: TriggerOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1195916615
 Transform:
   m_ObjectHideFlags: 0
@@ -38878,14 +39195,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195916614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc45327a33cd6045bcb572587e00f18, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 2123935132}
-  thisBox: {fileID: 1195916614}
-  _audioSource: {fileID: 1371476076}
-  _audioSource2: {fileID: 1195054995}
-  doorIsOpening: 0
+  trigger: {fileID: 1195916614}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1195916617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42123,12 +42486,12 @@ GameObject:
   - component: {fileID: 1340864656}
   - component: {fileID: 1340864655}
   m_Layer: 0
-  m_Name: Radio2Trigger
-  m_TagString: Untagged
+  m_Name: TriggerSeven
+  m_TagString: TriggerSeven
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1340864654
 Transform:
   m_ObjectHideFlags: 0
@@ -42150,12 +42513,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 1340864653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c16b3f20786930448e82e81a6a93c7c, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radio: {fileID: 2059970406}
-  thisBox: {fileID: 1340864653}
-  triggerOn: 0
+  trigger: {fileID: 1340864653}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1340864656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45966,7 +46377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444185914}
   - component: {fileID: 1444185916}
-  - component: {fileID: 1444185915}
+  - component: {fileID: 1444185917}
   m_Layer: 8
   m_Name: Button2
   m_TagString: Button2
@@ -45989,27 +46400,6 @@ Transform:
   m_Father: {fileID: 10484157}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1444185915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1444185913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b7241f5c8ccad4bb9d3ed3d7af1493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 2018567561}
-  doorIsOpening: 0
-  triggerObject: {fileID: 630398743}
-  triggerEnemy: {fileID: 2128193721}
-  thisBox: {fileID: 1444185913}
-  bgm1: {fileID: 1195054994}
-  bgm2: {fileID: 288827535}
-  button: {fileID: 1310146587}
-  trigger: {fileID: 402167507}
-  radio2: {fileID: 1340864653}
 --- !u!65 &1444185916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46022,6 +46412,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.27747893, y: 0.25935817, z: 0.06631565}
   m_Center: {x: 0.5283147, y: 0.009065509, z: 1.2717586}
+--- !u!114 &1444185917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444185913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d73d03474e4e741a82af8a1e960673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  buttonTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1445677607
 GameObject:
   m_ObjectHideFlags: 0
@@ -49140,7 +49551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 96126415}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547520163
 MonoBehaviour:
@@ -54414,8 +54825,8 @@ GameObject:
   - component: {fileID: 1737829782}
   - component: {fileID: 1737829781}
   m_Layer: 0
-  m_Name: Radio1Trigger
-  m_TagString: Untagged
+  m_Name: TriggerThree
+  m_TagString: TriggerThree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54441,12 +54852,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 1737829779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c16b3f20786930448e82e81a6a93c7c, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radio: {fileID: 756395895}
-  thisBox: {fileID: 1737829779}
-  triggerOn: 0
+  trigger: {fileID: 1737829779}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1737829782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62594,12 +63053,12 @@ GameObject:
   - component: {fileID: 2001144826}
   - component: {fileID: 2001144825}
   m_Layer: 0
-  m_Name: DisableEnemyInCorridor
-  m_TagString: Untagged
+  m_Name: TriggerSix
+  m_TagString: TriggerSix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2001144824
 Transform:
   m_ObjectHideFlags: 0
@@ -62621,17 +63080,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 2001144823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c9322b90894d634f86e26efd94606a6, type: 3}
+  m_Script: {fileID: 11500000, guid: d6da0f68e1f729b48a91a72cf414f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2128193721}
-  thisBox: {fileID: 2001144823}
-  lights: {fileID: 1473935824}
-  box:
-  - {fileID: 667938971}
-  flashlight: {fileID: 0}
-  lightsOff: {fileID: 114765915}
-  triggerOn: 0
+  trigger: {fileID: 2001144823}
+  triggerZero:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerOne:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerTwo:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerThree:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFour:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerFive:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSix:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerSeven:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerEight:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  triggerNine:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &2001144826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66415,13 +66917,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf051fae3feb8946b522fb17944b9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tcScript: []
-  btScript: []
-  an1: {fileID: 0}
-  an2: {fileID: 0}
-  an3: {fileID: 0}
-  an4: {fileID: 0}
-  an5: {fileID: 0}
+  tcScript:
+  - {fileID: 1195916616}
+  - {fileID: 537264214}
+  - {fileID: 210547712}
+  btScript:
+  - {fileID: 112942408}
+  - {fileID: 1444185917}
+  an1: {fileID: 2123935132}
+  an2: {fileID: 71122915}
+  an3: {fileID: 365683534}
+  an4: {fileID: 2018567561}
+  an5: {fileID: 352256256}
 --- !u!1 &2124923742
 GameObject:
   m_ObjectHideFlags: 0
