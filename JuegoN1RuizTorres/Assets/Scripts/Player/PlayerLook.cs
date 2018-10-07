@@ -62,6 +62,6 @@ public class PlayerLook : MonoBehaviour
 			transform.rotation = charControl.transform.rotation;
 		}
 
-		Debug.Log (charControl.transform.rotation);
+		//Debug.Log (charControl.transform.rotation);
     }
 }

@@ -6,11 +6,11 @@ public class Disable : MonoBehaviour {
 
     [SerializeField] PauseMenu pauseMenuScript;
 
-  	private HeadBob playerHB;
+  	[SerializeField] private HeadBob playerHB;
     [SerializeField] private GameObject playerCamera;
     [SerializeField] private GameObject playerWeapon;
     [SerializeField] private AudioSource sound;
-	private GameObject player;
+    [SerializeField] private GameObject player;
 
     void Start () {
         pauseMenuScript.OnPause.AddListener(DisablePlayer);
