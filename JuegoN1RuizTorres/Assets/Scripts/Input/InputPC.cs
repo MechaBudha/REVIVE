@@ -20,7 +20,7 @@ public class InputPC : IInput{
 		return Input.GetKeyDown (KeyCode.F);
 	}
 	public bool GetAct(){
-		return Input.GetKeyDown (KeyCode.Mouse0);
+		return Input.GetKeyDown (KeyCode.E);
 	}
 	public bool GetCamReset(){
 		return false;

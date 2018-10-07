@@ -57,12 +57,9 @@ public class PlayerLook : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(targetRotCam);
         playerBody.transform.rotation = Quaternion.Euler(targetRotBody);
-		charControl.transform.rotation = Quaternion.Euler (targetRotBody);
 
 		if(InputMg.GetCameraReset()){
-			transform.rotation = InitialRotation;
-			playerBody.transform.rotation = InitialBodyRotation;
-			charControl.transform.rotation = Quaternion.Euler (Vector3.zero);
+			transform.rotation = charControl.transform.rotation;
 		}
 
 		Debug.Log (charControl.transform.rotation);

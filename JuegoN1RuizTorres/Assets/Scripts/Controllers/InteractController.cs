@@ -29,7 +29,7 @@ public class InteractController : MonoBehaviour {
                 if(interactIcon != null)
                     interactIcon.enabled = true;
 
-                if(Input.GetButtonDown(interactButton))
+				if(InputManager.Instance.GetAction())
                 {
                     if(hitInfo.collider.CompareTag("Note"))
                     {

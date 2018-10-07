@@ -28,7 +28,6 @@ public class PlayerMove : MonoBehaviour
 		Vector3 moveDirSide = transform.right * horiz * walkSpeed ;
 		Vector3 moveDirForward = transform.forward * vert * walkSpeed ;
 
-        charControl.SimpleMove(moveDirSide);
-        charControl.SimpleMove(moveDirForward);
+        charControl.SimpleMove(moveDirSide + moveDirForward);
     }
 }
