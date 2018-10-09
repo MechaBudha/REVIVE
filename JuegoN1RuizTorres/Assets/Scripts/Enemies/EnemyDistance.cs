@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDistance : MonoBehaviour
 {
 
-    [SerializeField] Transform target;
+    Transform target;
     [SerializeField] float distance;
     [SerializeField] float speed;
     //[SerializeField] float distanceMin;
@@ -15,6 +15,7 @@ public class EnemyDistance : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+		target = FindObjectOfType<GameManager> ().GetPlayer ().transform;
     }
 
     void Update()

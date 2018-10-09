@@ -6,20 +6,19 @@ public class Disable : MonoBehaviour {
 
     [SerializeField] PauseMenu pauseMenuScript;
 
-  	[SerializeField] private HeadBob playerHB;
-    [SerializeField] private GameObject playerCamera;
+  	private HeadBob playerHB;
+    private GameObject playerCamera;
     [SerializeField] private GameObject playerWeapon;
     [SerializeField] private AudioSource sound;
-    [SerializeField] private GameObject player;
+ 	private GameObject player;
 
     void Start () {
         pauseMenuScript.OnPause.AddListener(DisablePlayer);
         pauseMenuScript.OnResume.AddListener(EnablePlayer);
+		player = FindObjectOfType<GameManager> ().GetPlayer ();
+		playerHB = player.GetComponentInChildren<HeadBob> ();
+		playerCamera = player.GetComponentInChildren<Camera> ().gameObject;
     }
-	public void SetPlayer(GameObject go){
-		player = go;
-		playerHB = player.GetComponent<HeadBob> ();
-	}
     void DisablePlayer()
     {
         player.GetComponent<PlayerMove>().enabled = false;

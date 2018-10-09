@@ -8,10 +8,13 @@ public class EnemyMove : MonoBehaviour {
     [SerializeField] private float minDist = 1;
     [SerializeField] private float maxDist = 10;
 
-    [SerializeField] private Transform target;
+    private Transform target;
     [SerializeField] private Transform myTransform;
     [SerializeField] private AudioSource laugh;
 
+	void Start(){
+		target = FindObjectOfType<GameManager> ().GetPlayer ().transform;
+	}
 
     void Update () {
         transform.LookAt(target);
