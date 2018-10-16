@@ -12,15 +12,16 @@ public class NotesController : MonoBehaviour
     [SerializeField] private AudioClip pickupSound;
     [SerializeField] private AudioClip putAwaySound;
 
-    [SerializeField] private GameObject playerObject;
-    [SerializeField] private GameObject cameraObject;
-    [SerializeField] private GameObject weaponObject;
+    private GameObject player;
+    private Camera cameraObject;
     [SerializeField] private GameObject pauseCanvas;
 
     void Start()
     {
         noteImage.enabled = false;
         hideNoteButton.SetActive(false);
+        player = FindObjectOfType<GameManager>().GetPlayer();
+        cameraObject = FindObjectOfType<GameManager>().GetPlayer().GetComponentInChildren<Camera>();
     }
 
     public void ShowNoteImage()
@@ -30,9 +31,8 @@ public class NotesController : MonoBehaviour
 
         hideNoteButton.SetActive(true);
 
-        playerObject.GetComponent<PlayerMove>().enabled = false;
+        player.GetComponent<PlayerMove>().enabled = false;
         cameraObject.GetComponent<PlayerLook>().enabled = false;
-        weaponObject.GetComponent<Weapon>().enabled = false;
         pauseCanvas.GetComponent<PauseMenu>().enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
@@ -47,9 +47,8 @@ public class NotesController : MonoBehaviour
 
         hideNoteButton.SetActive(false);
 
-        playerObject.GetComponent<PlayerMove>().enabled = true;
+        player.GetComponent<PlayerMove>().enabled = true;
         cameraObject.GetComponent<PlayerLook>().enabled = true;
-        weaponObject.GetComponent<Weapon>().enabled = true;
         pauseCanvas.GetComponent<PauseMenu>().enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;

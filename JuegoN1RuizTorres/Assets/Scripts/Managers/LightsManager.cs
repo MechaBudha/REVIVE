@@ -13,12 +13,13 @@ public class LightsManager : MonoBehaviour {
     [SerializeField] private GameObject[] allLights = null;
     [SerializeField] private GameObject[] allBox = null;
     [SerializeField] private GameObject[] boxOff = null;
-    [SerializeField] private GameObject flashlight;
+    private GameObject flashlight;
     [SerializeField] private Light lightOff;
 
     private void Awake()
     {
         //tcScript = tcScript.GetComponent<TriggerController>();
+        
     }
 
     void Start () {
@@ -26,6 +27,7 @@ public class LightsManager : MonoBehaviour {
         btScript.ButtonTwo.AddListener(LightRed);
         tcScript[1].TriggerSix.AddListener(LightOff);
         bearScript.Bear.AddListener(AllLightsOff);
+        flashlight = FindObjectOfType<GameManager>().GetPlayer().GetComponentInChildren<Flashlight>().transform.gameObject;
         //tcScript[2].TriggerEight.AddListener(AllLightsOff);
     }
 	
