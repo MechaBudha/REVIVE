@@ -8,7 +8,6 @@ public class Disable : MonoBehaviour {
 
   	private HeadBob playerHB;
     private GameObject playerCamera;
-    [SerializeField] private GameObject playerWeapon;
     [SerializeField] private AudioSource sound;
  	private GameObject player;
 
@@ -24,7 +23,6 @@ public class Disable : MonoBehaviour {
         player.GetComponent<PlayerMove>().enabled = false;
         playerHB.enabled = false;
         playerCamera.GetComponent<PlayerLook>().enabled = false;
-        playerWeapon.GetComponent<Weapon>().enabled = false;
 
         sound.GetComponent<AudioSource>().enabled = false;
     }
@@ -34,7 +32,6 @@ public class Disable : MonoBehaviour {
         player.GetComponent<PlayerMove>().enabled = true;
         playerHB.GetComponent<HeadBob>().enabled = true;
         playerCamera.GetComponent<PlayerLook>().enabled = true;
-        playerWeapon.GetComponent<Weapon>().enabled = true;
 
         sound.GetComponent<AudioSource>().enabled = true;
     }

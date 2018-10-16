@@ -10304,7 +10304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuScript: {fileID: 325543744}
-  playerWeapon: {fileID: 0}
   sound: {fileID: 114765915}
 --- !u!1 &307036992
 GameObject:
@@ -47481,9 +47480,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1484268773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5133ceed1e3cd8f40bd4b43459520eae, type: 3}
+  m_Script: {fileID: 11500000, guid: 3981e9935f84e604798264f29320823d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!4 &1484268775
 Transform:
   m_ObjectHideFlags: 0
@@ -53787,7 +53787,7 @@ GameObject:
   - component: {fileID: 1710952459}
   - component: {fileID: 1710952460}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
