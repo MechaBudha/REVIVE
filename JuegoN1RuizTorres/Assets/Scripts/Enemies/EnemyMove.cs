@@ -31,23 +31,15 @@ public class EnemyMove : MonoBehaviour {
 
         }
 
-        /*if (minDist > 6f)
-            Debug.Log("Hola");*/
 	}
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        { // check if it's the player, if you want
+        { 
             Destroy(this.gameObject);
             laugh.Play();
         }
     }
 
-    /*private void OnBecameVisible()
-    {
-        //Renderer.
-        //Destroy(gameObject);
-        Debug.Log("Hola");
-    }*/
 }
