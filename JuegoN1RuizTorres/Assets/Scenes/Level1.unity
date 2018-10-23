@@ -1012,7 +1012,6 @@ MonoBehaviour:
   - {fileID: 1375827254}
   boxOff:
   - {fileID: 667938971}
-  flashlight: {fileID: 0}
   lightOff: {fileID: 1473935824}
 --- !u!1 &42879284
 GameObject:
@@ -4926,9 +4925,6 @@ MonoBehaviour:
   hideNoteButton: {fileID: 1364774920}
   pickupSound: {fileID: 8300000, guid: 93f1a1692d59dda41b93e6d23df8abbe, type: 3}
   putAwaySound: {fileID: 8300000, guid: 7ab835969470c6f4fb486beadb79076d, type: 3}
-  playerObject: {fileID: 0}
-  cameraObject: {fileID: 0}
-  weaponObject: {fileID: 0}
   pauseCanvas: {fileID: 325543743}
 --- !u!82 &166711898
 AudioSource:
@@ -8364,9 +8360,6 @@ MonoBehaviour:
   hideNoteButton: {fileID: 1140523311}
   pickupSound: {fileID: 8300000, guid: 93f1a1692d59dda41b93e6d23df8abbe, type: 3}
   putAwaySound: {fileID: 8300000, guid: 7ab835969470c6f4fb486beadb79076d, type: 3}
-  playerObject: {fileID: 0}
-  cameraObject: {fileID: 0}
-  weaponObject: {fileID: 0}
   pauseCanvas: {fileID: 325543743}
 --- !u!82 &251112255
 AudioSource:
@@ -23430,6 +23423,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_IsPrefabAsset: 0
@@ -24733,9 +24730,6 @@ MonoBehaviour:
   hideNoteButton: {fileID: 272285562}
   pickupSound: {fileID: 8300000, guid: 93f1a1692d59dda41b93e6d23df8abbe, type: 3}
   putAwaySound: {fileID: 8300000, guid: 7ab835969470c6f4fb486beadb79076d, type: 3}
-  playerObject: {fileID: 0}
-  cameraObject: {fileID: 0}
-  weaponObject: {fileID: 0}
   pauseCanvas: {fileID: 325543743}
 --- !u!82 &742815195
 AudioSource:
@@ -27894,6 +27888,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_IsPrefabAsset: 0
@@ -33229,7 +33227,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34400,7 +34398,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37926,6 +37924,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_IsPrefabAsset: 0
@@ -38023,7 +38025,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42688,6 +42690,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_IsPrefabAsset: 0
@@ -49009,6 +49015,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_IsPrefabAsset: 0
@@ -55968,7 +55978,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: cba4a66dc2beded40a7e16f4a46de6a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
