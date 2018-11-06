@@ -30,13 +30,11 @@ public class SceneLoadManager : MonoBehaviour {
 
 	void Awake () {
         DontDestroyOnLoad(gameObject);
-        Debug.Log("slmAwake");
         currentScene = 0;
     }
 
     public void Initialize() {
        
-        Debug.Log("hola");
     }
 
     public string GetNextScene() {

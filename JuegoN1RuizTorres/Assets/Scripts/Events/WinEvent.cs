@@ -8,13 +8,10 @@ public class WinEvent : MonoBehaviour {
     [SerializeField] string nextScene;
     [SerializeField] AudioSource _audio;
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter(Collider other) {
 
-        if(other.CompareTag("Player"))
-        {
-            if (ScoreManager.Instance.Score >= 200)
-            {
+        if(other.CompareTag("Player")) {
+            if (ScoreManager.Instance.Score >= 200) {
                 _audio.Play();
                 StartCoroutine(ChangeLevel());
                 //SceneManager.LoadScene(nextScene);
@@ -22,8 +19,7 @@ public class WinEvent : MonoBehaviour {
         }
     }
 
-    IEnumerator ChangeLevel()
-    {
+    IEnumerator ChangeLevel() {
         float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

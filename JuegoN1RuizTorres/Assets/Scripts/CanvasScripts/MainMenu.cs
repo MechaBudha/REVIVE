@@ -5,24 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    private void Awake()
-    {
+    private void Awake() {
         SceneLoadManager.Instance.Initialize();
     }
 
-    private void Update()
-    {
+    private void Update() {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
  
-	public void PlayGame()
-    {
+	public void PlayGame() {
         StartCoroutine(ChangeLevel());
     }
 
-    public void QuitGame()
-    {
+    public void QuitGame() {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -30,8 +26,7 @@ public class MainMenu : MonoBehaviour {
 #endif
     }
 
-    IEnumerator ChangeLevel()
-    {
+    IEnumerator ChangeLevel() {
         float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadScene(SceneLoadManager.Instance.GetNextScene());

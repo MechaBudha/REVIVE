@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 		Player.transform.rotation = PlayerInitialPosition.rotation;
 	}
 
-	public GameObject GetPlayer(){
+	public GameObject GetPlayer() {
 		return Player;
 	}
 }
