@@ -26,6 +26,7 @@ public class WinEvent : MonoBehaviour {
     {
         float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(nextScene);
     }
 }

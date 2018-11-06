@@ -1,17 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+
 	private bool isAndroid;
 	private GameObject Player;
 	[SerializeField] private GameObject PlayerPC;
 	[SerializeField] private GameObject PlayerAndroid;
 	[SerializeField] private Transform PlayerInitialPosition;
 
-
-
-	// Use this for initialization
 	public void Awake () {
 		#if UNITY_ANDROID
 		isAndroid = true;

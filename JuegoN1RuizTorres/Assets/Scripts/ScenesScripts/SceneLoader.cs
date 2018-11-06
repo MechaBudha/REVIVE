@@ -3,12 +3,11 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour {
+
     private bool loadScene = false;
-
-    [SerializeField] private int scene;
     [SerializeField] private Text loadingText;
-
-    void Update() {
+    
+    void Update() {        
 
         if (loadScene == false) {
             loadScene = true;
@@ -25,7 +24,7 @@ public class SceneLoader : MonoBehaviour {
 
         yield return new WaitForSeconds(3);
 
-        AsyncOperation async = Application.LoadLevelAsync(scene);
+        AsyncOperation async = Application.LoadLevelAsync(SceneLoadManager.Instance.GetNextScene());
 
         while (!async.isDone) 
             yield return null;

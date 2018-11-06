@@ -50489,7 +50489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052a86cff3bea8a45983a1bb83a5477f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Level2
+  nextScene: LoadingL1
   _audio: {fileID: 1902488488}
 --- !u!1 &1587780887
 GameObject:

@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    private void Awake()
+    {
+        SceneLoadManager.Instance.Initialize();
+    }
+
     private void Update()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -29,6 +34,6 @@ public class MainMenu : MonoBehaviour {
     {
         float fadeTime = GameObject.Find("Fade").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneLoadManager.Instance.GetNextScene());
     }
 }
