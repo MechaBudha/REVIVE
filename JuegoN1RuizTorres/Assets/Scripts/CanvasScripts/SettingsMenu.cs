@@ -13,7 +13,7 @@ public class SettingsMenu : MonoBehaviour {
 
     void Start()
     {
-       resolutions = Screen.resolutions;
+        resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
 
