@@ -5,7 +5,7 @@ public class VRUIInteraction : MonoBehaviour {
 
     [SerializeField] float RayCastDistance;
     [SerializeField] Sprite ReticleSprite;
-    [SerializeField] float ReticleDistance;
+    [SerializeField] float MaxReticleDistance;
     private GameObject reticle;
 
     private RaycastHit rayInfo;
@@ -20,17 +20,20 @@ public class VRUIInteraction : MonoBehaviour {
     }
     void Update () {
         if (Physics.Raycast(transform.position, transform.forward, out rayInfo, RayCastDistance)){
-            float retDist;
-            if (rayInfo.distance < ReticleDistance) { retDist = rayInfo.distance; } else { retDist = ReticleDistance; }
-            reticle.transform.position = transform.position + (transform.forward * retDist); reticle.transform.LookAt(transform.position);
 
-            if (InputManager.Instance.GetAction() && rayInfo.collider.gameObject.tag == "UI")
+            float reticleDistance;
+
+            if (rayInfo.distance < MaxReticleDistance) { reticleDistance = rayInfo.distance; } else { reticleDistance = MaxReticleDistance; }
+            reticle.transform.position = transform.position + (transform.forward * reticleDistance); reticle.transform.LookAt(transform.position);
+
+
+            if (InputManager.Instance.GetAction() && rayInfo.collider.gameObject.layer == LayerMask.NameToLayer("UI"))
             {
-                Button but = rayInfo.collider.gameObject.GetComponent<Button>();
-                if (but) { but.onClick.Invoke(); }
+                Button button = rayInfo.collider.gameObject.GetComponent<Button>();
+                if (button) { button.onClick.Invoke();}
             }
         } else {
-            reticle.transform.position = transform.position + (transform.forward * ReticleDistance); reticle.transform.LookAt(transform.position);
+            reticle.transform.position = transform.position + (transform.forward * MaxReticleDistance); reticle.transform.LookAt(transform.position);
         }
 	}
 }

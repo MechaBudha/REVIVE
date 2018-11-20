@@ -23,7 +23,7 @@ public class InputManager : MonoBehaviour {
 		#if UNITY_ANDROID
 		input = new InputAndroid();
 		if (!Input.gyro.enabled) {
-		Input.gyro.enabled = true;
+		    Input.gyro.enabled = true;
 		}
 		#else
 		input = new InputPC();
@@ -37,7 +37,7 @@ public class InputManager : MonoBehaviour {
 		return input.GetRot ();
 	}
 	public bool GetAction(){
-		return input.GetAct ();
+        return input.GetAct ();
 	}
 	public bool GetFlash(){
 		return input.GetFlash ();

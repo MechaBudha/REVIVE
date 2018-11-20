@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
@@ -56,10 +54,16 @@ public class PlayerLook : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Euler(targetRotCam);
+
+#if UNITY_ANDROID
+        Quaternion camRot = Camera.main.transform.localRotation;
+        playerBody.transform.rotation = new Quaternion(0,camRot.y, 0, camRot.w);
+#else
         playerBody.transform.rotation = Quaternion.Euler(targetRotBody);
+#endif
 
 		if(InputMg.GetCameraReset()){
-			transform.rotation = charControl.transform.rotation;
+            GvrCardboardHelpers.Recenter();
 		}
 
 		//Debug.Log (charControl.transform.rotation);
