@@ -23,6 +23,10 @@ public class PlayerLook : MonoBehaviour
     {
 		
         RotateCamera();
+
+        if (InputMg.GetCameraReset()){
+            GvrCardboardHelpers.Recenter();
+        }
     }
 
     void RotateCamera()
@@ -61,11 +65,5 @@ public class PlayerLook : MonoBehaviour
 #else
         playerBody.transform.rotation = Quaternion.Euler(targetRotBody);
 #endif
-
-		if(InputMg.GetCameraReset()){
-            GvrCardboardHelpers.Recenter();
-		}
-
-		//Debug.Log (charControl.transform.rotation);
     }
 }

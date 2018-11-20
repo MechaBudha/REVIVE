@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
 		float horiz = move.x;
 		float vert = move.y;
 
-		Vector3 moveDirSide = transform.forward * horiz * walkSpeed;
+		Vector3 moveDirSide = transform.right * horiz * walkSpeed;
 		Vector3 moveDirForward = transform.forward * vert * walkSpeed;
 
         charControl.SimpleMove(moveDirSide + moveDirForward);

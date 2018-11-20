@@ -3,8 +3,8 @@
 public class InputAndroid : IInput {
 	public Vector2 GetDir(){
 		Vector2 dir;
-		dir.y = Input.GetAxis ("Horizontal") * -1;
-		dir.x = Input.GetAxis ("Vertical");
+		dir.x = Input.GetAxis ("Horizontal");
+		dir.y = Input.GetAxis ("Vertical");
 		return dir;
 	}
 	public Vector3 GetRot(){
