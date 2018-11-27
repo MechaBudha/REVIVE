@@ -6,12 +6,12 @@ public class PlayerMove : MonoBehaviour
 {
     CharacterController charControl;
     public float walkSpeed;
-	private InputManager InputMg;
+	private InputManager inputMg;
 
     void Awake()
     {
         charControl = GetComponent<CharacterController>();
-		InputMg = InputManager.Instance;
+		inputMg = InputManager.Instance;
     }
 
     void Update()
@@ -21,7 +21,7 @@ public class PlayerMove : MonoBehaviour
 
     void MovePlayer()
     {
-		Vector2 move = InputMg.GetDirection ();
+		Vector2 move = inputMg.GetDirection ();
 		float horiz = move.x;
 		float vert = move.y;
 

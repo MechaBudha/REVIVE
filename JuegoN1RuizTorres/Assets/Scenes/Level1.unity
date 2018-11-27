@@ -5650,6 +5650,10 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -1.5899963
       objectReference: {fileID: 0}
+    - target: {fileID: 1228876052484582, guid: 05628b1e730c38d4798318a07815ade9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05628b1e730c38d4798318a07815ade9, type: 2}
   m_IsPrefabAsset: 0
@@ -53828,7 +53832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPC: {fileID: 1335184537454676, guid: d69d37e1fb51b5e4091743c415b1f1c2, type: 2}
-  PlayerAndroid: {fileID: 1612917732867518, guid: 42bc1058524046f478921e30c80af374,
+  PlayerAndroid: {fileID: 1966025220867452, guid: 8390613dd9ff58a428dc92fa405daa85,
     type: 2}
   PlayerInitialPosition: {fileID: 4147560142067564, guid: fcfa294c5a939a443ae198762d06564d,
     type: 2}
@@ -61070,7 +61074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1941046485
 MonoBehaviour:
   m_ObjectHideFlags: 0
