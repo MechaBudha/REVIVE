@@ -7,7 +7,7 @@ public class VRUIInteraction : MonoBehaviour {
     [SerializeField] Sprite ReticleSprite;
     [SerializeField] float MaxReticleDistance;
     private GameObject reticle;
-
+    private int mascara;
     private RaycastHit rayInfo;
 
     private void Start()
@@ -17,9 +17,11 @@ public class VRUIInteraction : MonoBehaviour {
         reticle.AddComponent<SpriteRenderer>().sprite = ReticleSprite;
         reticle.transform.position = transform.forward * RayCastDistance;
         reticle.transform.LookAt(transform.position);
+        mascara = ~LayerMask.GetMask("Player");
+        
     }
     void Update () {
-        if (Physics.Raycast(transform.position, transform.forward, out rayInfo, RayCastDistance)){
+        if (Physics.Raycast(transform.position, transform.forward, out rayInfo, RayCastDistance, mascara)){
 
             float reticleDistance;
 
