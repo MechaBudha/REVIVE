@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.013604563, g: 0.012163071, b: 0.017030803, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3003,50 +3003,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 493860, guid: a73967be39a7cc74ca310e8a9d9de82d,
     type: 2}
   m_PrefabInternal: {fileID: 313169570}
---- !u!1 &314612828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 314612830}
-  - component: {fileID: 314612829}
-  m_Layer: 0
-  m_Name: PlayerSetUpManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &314612829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 314612828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd4ff4b7584b3c344820c0141a163e08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitialTransform: {fileID: 4058249319760564, guid: 5910382bf6065d643b7198ca829d651b,
-    type: 2}
-  PcPlayer: {fileID: 1335184537454676, guid: d69d37e1fb51b5e4091743c415b1f1c2, type: 2}
-  VrmPlayer: {fileID: 1612917732867518, guid: 42bc1058524046f478921e30c80af374, type: 2}
---- !u!4 &314612830
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 314612828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &340722580
 Prefab:
   m_ObjectHideFlags: 0
@@ -20129,6 +20085,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 475148, guid: b826295956c65444987d7baae67c5858,
     type: 2}
   m_PrefabInternal: {fileID: 2132934502}
+--- !u!1 &2142369162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142369164}
+  - component: {fileID: 2142369163}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2142369163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142369162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbfd0f53c6b094ab374edde9aa679e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerPC: {fileID: 1335184537454676, guid: d69d37e1fb51b5e4091743c415b1f1c2, type: 2}
+  PlayerAndroid: {fileID: 1966025220867452, guid: 8390613dd9ff58a428dc92fa405daa85,
+    type: 2}
+  PlayerInitialPosition: {fileID: 4862255721231200, guid: e6f5acdafbf0450448b39fd8a6480009,
+    type: 2}
+--- !u!4 &2142369164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142369162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2144528511
 Prefab:
   m_ObjectHideFlags: 0

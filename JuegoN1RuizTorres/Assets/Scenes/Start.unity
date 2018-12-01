@@ -2013,10 +2013,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4470715905446400, guid: 42bc1058524046f478921e30c80af374, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1612917732867518, guid: 42bc1058524046f478921e30c80af374, type: 2}
       propertyPath: m_Name
       value: PlayerVRStart
@@ -2029,6 +2025,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1612917732867518, guid: 42bc1058524046f478921e30c80af374,
     type: 2}
   m_PrefabInternal: {fileID: 1997492391}
+--- !u!114 &1997492393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1997492392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65feac09a760c4a4eacd673e656ccf75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayCastDistance: 5
+  ReticleSprite: {fileID: 21300000, guid: 9be55a1c895d42a48a59cd0f2fedcb49, type: 3}
+  MaxReticleDistance: 5
 --- !u!1001 &2094860624
 Prefab:
   m_ObjectHideFlags: 0

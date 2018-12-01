@@ -439,8 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f92083cba8aa4b8f223c7c4c5b918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charControl: {fileID: 143951644870624546}
   walkSpeed: 1.8
+  vrCamera: {fileID: 4358449136597262}
 --- !u!114 &114402686530543018
 MonoBehaviour:
   m_ObjectHideFlags: 1
