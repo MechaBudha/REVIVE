@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 81939233744400398}
   - component: {fileID: 114635870849192120}
   - component: {fileID: 114775748832111482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VRCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4938088891377240}
   - component: {fileID: 114797434437379728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GvrEditorEmulator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 82635047026448364}
   - component: {fileID: 114837375700307628}
   - component: {fileID: 114595534350808474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,8 +78,7 @@ GameObject:
   - component: {fileID: 114470309580868386}
   - component: {fileID: 82123138229499956}
   - component: {fileID: 114694244541512506}
-  - component: {fileID: 114327481042394668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JugadorVR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,20 +416,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114327481042394668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1966025220867452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65feac09a760c4a4eacd673e656ccf75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RayCastDistance: 5
-  ReticleSprite: {fileID: 21300000, guid: 9be55a1c895d42a48a59cd0f2fedcb49, type: 3}
-  MaxReticleDistance: 5
 --- !u!114 &114470309580868386
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -21,6 +21,8 @@ public class VRPlayerMovement : MonoBehaviour {
         var movement = (inputMG.GetDirection().y  * vrCamera.right + inputMG.GetDirection().x * -1 * vrCamera.forward).normalized * walkSpeed;
         Debug.Log(movement);
         charControl.Move(movement);
+
+        if(inputMG.GetCameraReset()){ GvrCardboardHelpers.Recenter();}
 	}
 
     

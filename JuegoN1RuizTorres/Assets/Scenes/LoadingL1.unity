@@ -316,6 +316,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114150571200579064, guid: 008f739dd8b7e1644854baa4879477f9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150571200579064, guid: 008f739dd8b7e1644854baa4879477f9,
+        type: 2}
+      propertyPath: walkSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008f739dd8b7e1644854baa4879477f9, type: 2}
   m_IsPrefabAsset: 0
@@ -737,7 +747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1503630679
 MonoBehaviour:
   m_ObjectHideFlags: 0
