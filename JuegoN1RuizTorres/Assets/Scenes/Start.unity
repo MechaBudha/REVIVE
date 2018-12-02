@@ -1117,25 +1117,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 493860, guid: a73967be39a7cc74ca310e8a9d9de82d,
     type: 2}
   m_PrefabInternal: {fileID: 114496591}
---- !u!1 &1182934210 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1534654901106276, guid: 42bc1058524046f478921e30c80af374,
-    type: 2}
-  m_PrefabInternal: {fileID: 1997492391}
---- !u!114 &1182934211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1182934210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65feac09a760c4a4eacd673e656ccf75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RayCastDistance: 5
-  ReticleSprite: {fileID: 21300000, guid: 9be55a1c895d42a48a59cd0f2fedcb49, type: 3}
-  MaxReticleDistance: 5
 --- !u!4 &1213719675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 401912, guid: a71dd1fa6efddfa41990980cd044de47,
@@ -2006,7 +1987,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4660210000228726, guid: 42bc1058524046f478921e30c80af374, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.325
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4660210000228726, guid: 42bc1058524046f478921e30c80af374, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2035,11 +2016,6 @@ Prefab:
     - target: {fileID: 1612917732867518, guid: 42bc1058524046f478921e30c80af374, type: 2}
       propertyPath: m_Name
       value: PlayerVRStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 114298504299423232, guid: 42bc1058524046f478921e30c80af374,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42bc1058524046f478921e30c80af374, type: 2}
