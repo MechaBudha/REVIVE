@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 114678928149463778}
   - component: {fileID: 114934528348828372}
   - component: {fileID: 114071209819813882}
+  - component: {fileID: 114135598310963894}
   m_Layer: 9
   m_Name: FirstPersonCamera
   m_TagString: MainCamera
@@ -153,7 +154,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1534654901106276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.581, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4445015486373870}
@@ -181,7 +182,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1612917732867518}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.275, y: 2.325, z: 0.3}
+  m_LocalPosition: {x: 2.275, y: 2.4, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4504698250250768}
@@ -513,6 +514,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: 10
   jumpForce: 5
+--- !u!114 &114135598310963894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534654901106276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65feac09a760c4a4eacd673e656ccf75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayCastDistance: 5
+  ReticleSprite: {fileID: 21300000, guid: 9be55a1c895d42a48a59cd0f2fedcb49, type: 3}
+  MaxReticleDistance: 5
 --- !u!114 &114224908798515996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -533,7 +548,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1612917732867518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 382f92083cba8aa4b8f223c7c4c5b918, type: 3}
   m_Name: 
