@@ -1,0 +1,1 @@
+14/12: texturas en móvil 2048->1024. Tamaño de apk 169MB->108MB
