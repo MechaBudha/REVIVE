@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 		isAndroid = false;
 		#endif
 		if (isAndroid) {
+            Application.targetFrameRate = 60;
 			Player = Instantiate (PlayerAndroid);
 			Debug.Log ("Android player instantiated");
 		} else {
