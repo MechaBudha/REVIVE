@@ -20,10 +20,8 @@ public class GameManager : MonoBehaviour {
 		if (isAndroid) {
             Application.targetFrameRate = 60;
 			Player = Instantiate (PlayerAndroid);
-			Debug.Log ("Android player instantiated");
 		} else {
 			Player = Instantiate (PlayerPC);
-			Debug.Log ("PC player instantiated");
 		}
 		Player.transform.position = PlayerInitialPosition.position;
 		Player.transform.rotation = PlayerInitialPosition.rotation;

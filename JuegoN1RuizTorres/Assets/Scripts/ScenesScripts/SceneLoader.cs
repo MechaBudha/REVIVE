@@ -23,7 +23,7 @@ public class SceneLoader : MonoBehaviour {
 
     IEnumerator LoadNewScene() {
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(7);
 
         AsyncOperation async = SceneManager.LoadSceneAsync(SceneLoadManager.Instance.GetNextScene());
 

@@ -38,7 +38,6 @@ public class AudioManager : MonoBehaviour {
 	
     void AudioOne()
     {
-        Debug.Log("Event 1 AUDIOM");
         as1.Play();
         as2.Play();
     }

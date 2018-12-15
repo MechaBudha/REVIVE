@@ -26,61 +26,51 @@ public class TriggerManager : MonoBehaviour {
 
     void EventZero()
     {
-        Debug.Log("Event 0 TM");
         ScoreManager.Instance.Score += 100;
     }
 
     void EventOne()
     {
-        Debug.Log("Event 1 TM");
         ScoreManager.Instance.Score += 50;
     }
 
     void EventTwo()
     {
-        Debug.Log("Event 2 TM");
         ScoreManager.Instance.Score += 100;
     }
 
     void EventThree()
     {
-        Debug.Log("Event 3 TM");
         ScoreManager.Instance.Score += 100;
     }
 
     void EventFour()
     {
-        Debug.Log("Event 4 TM");
         ScoreManager.Instance.Score += 50;
     }
 
     void EventFive()
     {
-        Debug.Log("Event 5 TM");
         ScoreManager.Instance.Score += 100;
     }
 
     void EventSix()
     {
-        Debug.Log("Event 6 TM");
         ScoreManager.Instance.Score += 50;
     }
 
     void EventSeven()
     {
-        Debug.Log("Event 7 TM ");
         //ScoreManager.Instance.Score += 100;
     }
 
     void EventEight()
     {
-        Debug.Log("Event 8 TM");
         ScoreManager.Instance.Score += 100;
     }
 
     void EventNine()
     {
-        Debug.Log("Event 9 TM");
         ScoreManager.Instance.Score += 100;
     }
 }

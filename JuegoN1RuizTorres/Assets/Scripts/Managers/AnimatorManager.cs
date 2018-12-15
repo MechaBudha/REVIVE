@@ -28,7 +28,6 @@ public class AnimatorManager : MonoBehaviour {
 	
 	void AnimationOne()
     {
-        Debug.Log("Event 1 AM");
         an1.SetBool("open", true);
     }
 

@@ -27,7 +27,6 @@ public class TriggerController : MonoBehaviour
     {
         
         score = ScoreManager.Instance.Score;
-        Debug.Log("Pase por un trigger");
         //string triggerName = null;
         switch (score)
         {
@@ -35,7 +34,6 @@ public class TriggerController : MonoBehaviour
                 if (trigger.CompareTag("TriggerZero"))
                 {
                     //triggerName = trigger.tag;
-                    Debug.Log("Hola 0");
                     triggerZero.Invoke();
                     StartCoroutine(DisableTrigger(this.trigger));
                 }
@@ -44,7 +42,6 @@ public class TriggerController : MonoBehaviour
                 if (trigger.CompareTag("TriggerOne"))
                 {
                     triggerOne.Invoke();
-                    Debug.Log("Hola 100");
                     StartCoroutine(DisableTrigger(this.trigger));
                 }
                 break;
