@@ -20,11 +20,17 @@ public class Footsteps : MonoBehaviour {
 
     void Update()
     {
-		if (InputManager.Instance.GetDirection().y != 0)
+        float move;
+        #if UNITY_ANDROID
+            move = InputManager.Instance.GetDirection().x;
+        #else
+            move = InputManager.Instance.GetDirection().y;
+        #endif
+		if (move != 0)
         {
             isWalking = true;
         }
-		if (InputManager.Instance.GetDirection().y == 0)
+		if (move == 0)
         {
             isWalking = false;
         }
