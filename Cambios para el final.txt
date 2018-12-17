@@ -9,3 +9,5 @@
 - Packages que no van eliminados
 - Mas fps
 - Materiales configurados para movil
+- Prefab de jugador en Android ahora hace ruido al caminar
+- Nuevos colliders para ciertos objetos
