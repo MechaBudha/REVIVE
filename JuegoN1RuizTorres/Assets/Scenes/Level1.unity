@@ -6858,7 +6858,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: b47f5c9ac3a4adc4582f259efbe3c8e5, type: 3}
@@ -24378,7 +24378,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: b47f5c9ac3a4adc4582f259efbe3c8e5, type: 3}
@@ -31659,6 +31659,7 @@ GameObject:
   - component: {fileID: 1011032261}
   - component: {fileID: 1011032260}
   - component: {fileID: 1011032259}
+  - component: {fileID: 1011032262}
   m_Layer: 0
   m_Name: P_Med_box_01
   m_TagString: Untagged
@@ -31689,10 +31690,10 @@ MeshCollider:
   m_GameObject: {fileID: 1011032257}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 15
+  m_Convex: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 18ce9342c786442408d15b750748b72c, type: 3}
 --- !u!23 &1011032260
@@ -31739,6 +31740,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011032257}
   m_Mesh: {fileID: 4300000, guid: 18ce9342c786442408d15b750748b72c, type: 3}
+--- !u!65 &1011032262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011032257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33965603, y: 0.4224271, z: 1}
+  m_Center: {x: 0.003421002, y: -0.005784498, z: 0.5}
 --- !u!1 &1012145501
 GameObject:
   m_ObjectHideFlags: 0
@@ -49593,7 +49606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1610370137
 Transform:
   m_ObjectHideFlags: 0
@@ -63743,6 +63756,7 @@ GameObject:
   - component: {fileID: 2075098169}
   - component: {fileID: 2075098168}
   - component: {fileID: 2075098167}
+  - component: {fileID: 2075098170}
   m_Layer: 0
   m_Name: P_Med_box_01 (1)
   m_TagString: Untagged
@@ -63773,7 +63787,7 @@ MeshCollider:
   m_GameObject: {fileID: 2075098165}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 15
@@ -63823,6 +63837,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2075098165}
   m_Mesh: {fileID: 4300000, guid: 18ce9342c786442408d15b750748b72c, type: 3}
+--- !u!65 &2075098170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2075098165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33965603, y: 0.4224271, z: 1}
+  m_Center: {x: 0.003421002, y: -0.005784498, z: 0.5}
 --- !u!1 &2083073043
 GameObject:
   m_ObjectHideFlags: 0
