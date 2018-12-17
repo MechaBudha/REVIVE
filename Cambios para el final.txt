@@ -1,1 +1,11 @@
-14/12: texturas en móvil 2048->1024. Tamaño de apk 169MB->108MB
+- texturas en móvil 2048->1024. 
+- Tamaño de apk 169MB->98MB
+- Se forzo la aplicacion en 60fps
+- Se configuro el quiality settings correctamente
+- ELiminacioon de cosas de los nivelñes que no iban (objetos en la escena)
+- optimizacion de scripts
+- Compresion en 16-bit
+- Audios optimizados (como se cargan -decompress/streaming) y se forzaron a mono
+- Packages que no van eliminados
+- Mas fps
+- Materiales configurados para movil
